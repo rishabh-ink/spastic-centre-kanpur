@@ -13,6 +13,8 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/style.css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Coming+Soon" />
   <script src="<?php bloginfo("template_url"); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
 
   <?php wp_head(); ?>
@@ -23,8 +25,16 @@
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
 
-  <div class="row">
-    <header>
-      <h1><a href="<?php echo get_option("home"); ?>"><?php bloginfo("title"); ?></a></h1>
-    </header>
-  </div>
+  <header class="site-header">
+    <div class="banner">
+      <a class="logo" href="<?php echo get_option("home"); ?>">
+        <h1 class="title"><?php bloginfo("title"); ?></h1>
+        <p class="description"><?php bloginfo("description") ?></p>
+        <p class="description secondary"><?php /* FIXME Use the Settings API to get this content dynamically.*/ echo "Formerly the Spastic Centre, Kanpur" ?></p>
+      </a>
+    </div>
+    <div class="actions">
+      <a href="/cart" class="view-cart">View cart</a>
+      <a href="/blog" class="blog">Read our blog</a>
+    </div>
+  </header>
