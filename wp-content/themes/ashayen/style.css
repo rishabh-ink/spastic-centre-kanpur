@@ -5647,17 +5647,25 @@ table tfoot tr td {
 .navigation-bar {
   margin: 20px 0;
 }
-/* line 48, css/component/_header.scss */
+/* line 49, css/component/_header.scss */
 .navigation-bar ul {
   list-style: none;
   font-family: "Pick and Roll", "Coming Soon", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 1.1875em;
   text-transform: uppercase;
 }
-/* line 55, css/component/_header.scss */
+/* line 56, css/component/_header.scss */
 .navigation-bar li {
   display: inline;
   padding: 0 0 0 64px;
+}
+/* line 61, css/component/_header.scss */
+.navigation-bar a {
+  color: #6f6f6f;
+}
+/* line 65, css/component/_header.scss */
+.navigation-bar a:hover {
+  color: #222222;
 }
 
 /* line 2, css/component/_body.scss */

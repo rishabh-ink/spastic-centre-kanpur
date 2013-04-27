@@ -45,6 +45,7 @@
 
 .navigation-bar {
   margin: 20px 0;
+
   ul {
     list-style: none;
     font-family: $header-font-family;
@@ -57,7 +58,11 @@
     padding: 0 0 0 64px;
   }
 
-  .home {
+  a {
+    color: $subheader-font-color;
+  }
 
+  a:hover {
+      color: $header-font-color;
   }
 }
