@@ -24,17 +24,24 @@
   <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
+  <div class="container">
+    <header class="site-header">
+      <div class="masthead">
+        <a class="logo" href="<?php echo get_option("home"); ?>">
+          <h1 class="title"><?php bloginfo("title"); ?></h1>
+          <p class="description"><?php bloginfo("description") ?></p>
+          <p class="secondary"><?php /* FIXME Use the Settings API to get this content dynamically.*/ echo "Formerly the Spastic Centre, Kanpur" ?></p>
+        </a>
+      </div>
+      <div class="actions">
+        <!-- <a href="/cart" class="view-cart">View cart</a> -->
+        <!-- <a href="/blog" class="blog">Read our blog</a> -->
+      </div>
+    </header>
 
-  <header class="site-header">
-    <div class="banner">
-      <a class="logo" href="<?php echo get_option("home"); ?>">
-        <h1 class="title"><?php bloginfo("title"); ?></h1>
-        <p class="description"><?php bloginfo("description") ?></p>
-        <p class="description secondary"><?php /* FIXME Use the Settings API to get this content dynamically.*/ echo "Formerly the Spastic Centre, Kanpur" ?></p>
-      </a>
-    </div>
-    <div class="actions">
-      <a href="/cart" class="view-cart">View cart</a>
-      <a href="/blog" class="blog">Read our blog</a>
-    </div>
-  </header>
+    <?php
+      wp_nav_menu(array(
+        "container_class" => "navigation-bar",
+        "container" => "nav"
+      ));
+    ?>
