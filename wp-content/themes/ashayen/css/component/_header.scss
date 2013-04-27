@@ -1,7 +1,10 @@
 .site-header {
   @include grid-row();
 
-  .banner {
+  background: url('img/common/waves.png') repeat-x left bottom;
+  padding-bottom: 2 * $valueLargest;
+
+  .masthead {
     @include grid-column($columns: 8);
   }
 
@@ -26,14 +29,34 @@
 
   .description {
     margin: 0 0 0 $valueLarge;
+    font-family: $header-font-family;
   }
 
-  .description.secondary {
+  .secondary {
+    margin: 0 0 0 $valueLarge;
     color: $small-font-color;
     font-size: $small-font-size;
   }
 
   .actions {
     @include grid-column($columns: 4);
+  }
+}
+
+.navigation-bar {
+  ul {
+    list-style: none;
+    font-family: $header-font-family;
+    font-size: emCalc(20px);
+    text-transform: uppercase;
+  }
+
+  li {
+    display: inline;
+    padding: 0 0 0 $valueXXXLargest;
+  }
+
+  .home {
+
   }
 }

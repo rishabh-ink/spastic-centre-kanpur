@@ -2,3 +2,8 @@ html,
 body {
   background: $body-bg;
 }
+
+.container {
+  @include grid-row();
+  margin: (2 * $valueLarge) auto;
+}
