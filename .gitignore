@@ -7,3 +7,4 @@ sitemap.xml
 *.log
 sitemap.xml
 sitemap.xml.gz
+.sass-cache
