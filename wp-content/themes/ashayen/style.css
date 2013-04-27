@@ -5569,3 +5569,9 @@ table tfoot tr td {
 .f-dropdown.large {
   max-width: 800px;
 }
+
+/* line 2, css/component/_body.scss */
+html,
+body {
+  background: #e5e0e0;
+}
