@@ -1,0 +1,39 @@
+.site-header {
+  @include grid-row();
+
+  .banner {
+    @include grid-column($columns: 8);
+  }
+
+  a.logo {
+    background: url('img/branding/logo.png') no-repeat;
+
+    padding-left: $logo-width;
+    min-height: $logo-height;
+
+    color: $body-font-color;
+    display: block;
+
+    &:hover,
+    &:visited {
+      color: $body-font-color;
+    }
+  }
+
+  .title {
+    margin: $valueLarge 0 0 $valueLarge;
+  }
+
+  .description {
+    margin: 0 0 0 $valueLarge;
+  }
+
+  .description.secondary {
+    color: $small-font-color;
+    font-size: $small-font-size;
+  }
+
+  .actions {
+    @include grid-column($columns: 4);
+  }
+}

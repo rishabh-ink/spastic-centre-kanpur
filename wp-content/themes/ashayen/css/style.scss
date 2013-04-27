@@ -6,8 +6,8 @@ Description: Ashayen is a theme for the Ashayen Centre (formerly Spastic Centre)
 Version: 1.0.0
 */
 
+@import "override/override";
 @import "lib/lib";
 @import "setting/setting";
-@import "override/override";
 @import "util/util";
 @import "component/component";
