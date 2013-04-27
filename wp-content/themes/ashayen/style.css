@@ -5643,21 +5643,21 @@ table tfoot tr td {
   float: left;
 }
 
-/* line 47, css/component/_header.scss */
+/* line 46, css/component/_header.scss */
+.navigation-bar {
+  margin: 20px 0;
+}
+/* line 48, css/component/_header.scss */
 .navigation-bar ul {
   list-style: none;
   font-family: "Pick and Roll", "Coming Soon", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-size: 1.25em;
+  font-size: 1.1875em;
   text-transform: uppercase;
 }
-/* line 54, css/component/_header.scss */
+/* line 55, css/component/_header.scss */
 .navigation-bar li {
   display: inline;
-  padding: 0 0 0 32px;
-}
-/* line 59, css/component/_header.scss */
-.navigation-bar li:first-child {
-  padding: 0;
+  padding: 0 0 0 64px;
 }
 
 /* line 2, css/component/_body.scss */

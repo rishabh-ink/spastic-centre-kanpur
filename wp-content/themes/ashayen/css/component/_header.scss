@@ -44,16 +44,17 @@
 }
 
 .navigation-bar {
+  margin: 20px 0;
   ul {
     list-style: none;
     font-family: $header-font-family;
-    font-size: emCalc(20px);
+    font-size: emCalc(19px);
     text-transform: uppercase;
   }
 
   li {
     display: inline;
-    padding: 0 0 0 $valueXXXLargest;
+    padding: 0 0 0 64px;
   }
 
   .home {
