@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, deleniti accusantium aliquam id dolores illum hic esse cum! Minima, illum quas accusamus alias consequuntur laborum beatae reprehenderit magni autem magnam!</p>
+<div style="height: 1024px;"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, deleniti accusantium aliquam id dolores illum hic esse cum! Minima, illum quas accusamus alias consequuntur laborum beatae reprehenderit magni autem magnam!</p></div>
+
 <?php
 /*
 <section class="featured-posts">

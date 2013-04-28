@@ -5,5 +5,8 @@ body {
 
 .container {
   @include grid-row();
-  margin: (2 * $valueLarge) auto;
+  margin: 0 auto;
+
+  background: url('img/common/border-left.png') repeat-y left center,
+              url('img/common/border-right.png') repeat-y right center;
 }
