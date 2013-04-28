@@ -1,8 +1,16 @@
     <?php
       wp_nav_menu(array(
-        "container_class" => "navigation-bar",
+        "container_class" => "",
         "container" => "nav",
-        "theme_location" => "secondary-menu"
+        "theme_location" => "footer-menu"
+      ));
+    ?>
+
+    <?php
+      wp_nav_menu(array(
+        "container_class" => "",
+        "container" => "nav",
+        "theme_location" => "social-media-menu"
       ));
     ?>
 

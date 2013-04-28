@@ -2,8 +2,9 @@
   if(function_exists("register_nav_menus")) {
     register_nav_menus(
       array(
-        "primary-menu" => "Header menu",
-        "secondary-menu" => "Footer menu"
+        "header-menu" => "Header menu",
+        "footer-menu" => "Footer menu",
+        "social-media-menu" => "Social media menu"
       )
     );
   }

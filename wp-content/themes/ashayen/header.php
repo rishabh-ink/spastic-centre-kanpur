@@ -43,6 +43,6 @@
       wp_nav_menu(array(
         "container_class" => "navigation-bar",
         "container" => "nav",
-        "theme_location" => "primary-menu"
+        "theme_location" => "header-menu"
       ));
     ?>
