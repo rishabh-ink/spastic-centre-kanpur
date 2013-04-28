@@ -6,11 +6,11 @@ footer {
 
 
   .legal-info {
-    @include grid-column($columns: 6);
+    @include grid-column($columns: 8);
   }
 
   .contact-info {
-    @include grid-column($columns: 6);
+    @include grid-column($columns: 4);
   }
 
   .footer-menu {
