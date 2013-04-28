@@ -30,7 +30,7 @@
         <a class="logo" href="<?php echo get_option("home"); ?>">
           <h1 class="title"><?php bloginfo("title"); ?></h1>
           <p class="description"><?php bloginfo("description") ?></p>
-          <p class="secondary"><?php /* FIXME Use the Settings API to get this content dynamically.*/ echo "Formerly the Spastic Centre, Kanpur" ?></p>
+          <p class="secondary"><?php echo get_option('gcf-tertiary-title'); ?></p>
         </a>
       </div>
       <div class="actions">
