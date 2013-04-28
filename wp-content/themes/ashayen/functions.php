@@ -1,6 +1,11 @@
 <?php
   if(function_exists("register_nav_menus")) {
-    register_nav_menus(array("primary" => "Header navigation"));
+    register_nav_menus(
+      array(
+        "primary-menu" => "Header menu",
+        "secondary-menu" => "Footer menu"
+      )
+    );
   }
 
   if(function_exists("add_theme_support")) {

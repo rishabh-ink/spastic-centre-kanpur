@@ -1,3 +1,11 @@
+    <?php
+      wp_nav_menu(array(
+        "container_class" => "navigation-bar",
+        "container" => "nav",
+        "theme_location" => "secondary-menu"
+      ));
+    ?>
+
   </div>
   <script src="<?php bloginfo("template_url"); ?>/js/vendor/jquery-1.9.1.min.js"></script>
   <script>window.jQuery || document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"><\/script>')</script>
