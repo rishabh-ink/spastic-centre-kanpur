@@ -53,68 +53,90 @@
           <small>Your name for addressing.</small>
         </div>
 
+        <br />
+
         <div>
-          <br /><strong><label for="gcf-address-subtitle">Sub-title:</label></strong><br />
+          <strong><label for="gcf-address-subtitle">Sub-title:</label></strong><br />
           <input type="text" size="64" name="gcf-address-subtitle" value="<?php echo get_option('gcf-address-subtitle'); ?>" />
           <small>Your secondary name for addressing.</small>
         </div>
 
+        <br />
+
         <div>
-          <br /><strong><label for="gcf-address-line1">Line 1:</label></strong><br />
+          <strong><label for="gcf-address-line1">Line 1:</label></strong><br />
           <input type="text" size="64" name="gcf-address-line1" value="<?php echo get_option('gcf-address-line1'); ?>" />
           <small>Door number, street name, cross number etc.</small>
         </div>
 
+        <br />
+
         <div>
-          <br /><strong><label for="gcf-address-line2">Line 2:</label></strong><br />
+          <strong><label for="gcf-address-line2">Line 2:</label></strong><br />
           <input type="text" size="64" name="gcf-address-line2" value="<?php echo get_option('gcf-address-line2'); ?>" />
           <small>Neighbourhood, area name etc.</small>
         </div>
 
+        <br />
+
         <div>
-          <br /><strong><label for="gcf-address-city">City:</label></strong><br />
+          <strong><label for="gcf-address-city">City:</label></strong><br />
           <input type="text" size="64" name="gcf-address-city" value="<?php echo get_option('gcf-address-city'); ?>" />
           <small></small>
         </div>
 
+        <br />
+
         <div>
-          <br /><strong><label for="gcf-address-state">State:</label></strong><br />
+          <strong><label for="gcf-address-state">State:</label></strong><br />
           <input type="text" size="64" name="gcf-address-state" value="<?php echo get_option('gcf-address-state'); ?>" />
           <small></small>
         </div>
 
+        <br />
+
         <div>
-          <br /><strong><label for="gcf-address-country">Country:</label></strong><br />
+          <strong><label for="gcf-address-country">Country:</label></strong><br />
           <input type="text" size="64" name="gcf-address-country" value="<?php echo get_option('gcf-address-country'); ?>" />
           <small></small>
         </div>
 
+        <br />
+
         <div>
-          <br /><strong><label for="gcf-address-postal-code">Postal code:</label></strong><br />
+          <strong><label for="gcf-address-postal-code">Postal code:</label></strong><br />
           <input type="text" size="64" name="gcf-address-postal-code" value="<?php echo get_option('gcf-address-postal-code'); ?>" />
           <small></small>
         </div>
 
+        <br />
+
         <div>
-          <br /><strong><label for="gcf-address-phone">Phone number:</label></strong><br />
+          <strong><label for="gcf-address-phone">Phone number:</label></strong><br />
           <input type="text" size="64" name="gcf-address-phone" value="<?php echo get_option('gcf-address-phone'); ?>" />
           <small></small>
         </div>
 
+        <br />
+
         <div>
-          <br /><strong><label for="gcf-address-phone2">Secondary phone number:</label></strong><br />
+          <strong><label for="gcf-address-phone2">Secondary phone number:</label></strong><br />
           <input type="text" size="64" name="gcf-address-phone2" value="<?php echo get_option('gcf-address-phone2'); ?>" />
           <small></small>
         </div>
 
+        <br />
+
         <div>
-          <br /><strong><label for="gcf-address-fax">Fax number:</label></strong><br />
+          <strong><label for="gcf-address-fax">Fax number:</label></strong><br />
           <input type="text" size="64" name="gcf-address-fax" value="<?php echo get_option('gcf-address-fax'); ?>" />
           <small></small>
         </div>
 
+        <br />
+
         <div>
-          <br /><strong><label for="gcf-address-email">Email:</label></strong><br />
+          <strong><label for="gcf-address-email">Email:</label></strong><br />
           <input type="email" size="64" name="gcf-address-email" value="<?php echo get_option('gcf-address-email'); ?>" />
           <small></small>
         </div>
