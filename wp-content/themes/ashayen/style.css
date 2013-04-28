@@ -5710,6 +5710,8 @@ footer {
   margin-bottom: 0;
   max-width: 62.5em;
   *zoom: 1;
+  background: url("img/common/waves.png") repeat-x left top;
+  padding-top: 28px;
 }
 /* line 184, css/lib/foundation/scss/foundation/_foundation-global.scss */
 footer:before, footer:after {
@@ -5720,7 +5722,7 @@ footer:before, footer:after {
 footer:after {
   clear: both;
 }
-/* line 4, css/component/_footer.scss */
+/* line 8, css/component/_footer.scss */
 footer .legal-info {
   position: relative;
   padding-left: 0.9375em;
@@ -5728,7 +5730,7 @@ footer .legal-info {
   width: 50%;
   float: left;
 }
-/* line 8, css/component/_footer.scss */
+/* line 12, css/component/_footer.scss */
 footer .contact-info {
   position: relative;
   padding-left: 0.9375em;

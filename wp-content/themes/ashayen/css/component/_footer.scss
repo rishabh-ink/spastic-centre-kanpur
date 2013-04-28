@@ -1,6 +1,10 @@
 footer {
   @include grid-row();
 
+  background: url('img/common/waves.png') repeat-x left top;
+  padding-top: 2 * $valueLargest;
+
+
   .legal-info {
     @include grid-column($columns: 6);
   }

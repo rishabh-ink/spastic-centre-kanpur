@@ -22,8 +22,19 @@
           ));
         ?>
       </div>
-      <div class="address-wrap">
+      <div class="address">
+        <p>
+          <span class="title"><?php echo get_option('gcf-address-title'); ?></span><br />
+          <span class="subtitle"><?php echo get_option('gcf-address-subtitle'); ?></span><br />
+          <span class="line1"><?php echo get_option('gcf-address-line1'); ?></span>, <span class="line2"><?php echo get_option('gcf-address-line2'); ?></span><br />
+          <span class="city"><?php echo get_option('gcf-address-city'); ?></span>, <span class="state"><?php echo get_option('gcf-address-state'); ?></span>
+          <span class="country"><?php echo get_option('gcf-address-country'); ?></span> <span class="postal-code"><?php echo get_option('gcf-address-postal-code'); ?></span><br />
+          <span class="phone"><?php echo get_option('gcf-address-phone'); ?></span><br />
+          <span class="phone2"><?php echo get_option('gcf-address-phone2'); ?></span><br />
+          <span class="fax"><?php echo get_option('gcf-address-fax'); ?></span><br />
+          <span class="email"><?php echo get_option('gcf-address-email'); ?></span><br />
 
+        </p>
       </div>
     </div>
     </footer>
