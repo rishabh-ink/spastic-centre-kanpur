@@ -1,0 +1,9 @@
+@mixin horizontal-menu () {
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline;
+  }
+}

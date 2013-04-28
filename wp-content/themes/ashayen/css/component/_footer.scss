@@ -1,0 +1,19 @@
+footer {
+  @include grid-row();
+
+  .legal-info {
+    @include grid-column($columns: 6);
+  }
+
+  .contact-info {
+    @include grid-column($columns: 6);
+  }
+
+  .footer-menu {
+    @include horizontal-menu();
+  }
+
+  .social-media-menu {
+    @include horizontal-menu();
+  }
+}

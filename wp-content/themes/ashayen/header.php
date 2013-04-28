@@ -41,7 +41,7 @@
 
     <?php
       wp_nav_menu(array(
-        "container_class" => "navigation-bar",
+        "container_class" => "header-menu",
         "container" => "nav",
         "theme_location" => "header-menu"
       ));

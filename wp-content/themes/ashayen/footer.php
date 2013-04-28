@@ -1,18 +1,32 @@
-    <?php
-      wp_nav_menu(array(
-        "container_class" => "",
-        "container" => "nav",
-        "theme_location" => "footer-menu"
-      ));
-    ?>
+    <footer>
+    <div class="legal-info">
+      <div class="footer-menu-wrap">
+        <?php
+          wp_nav_menu(array(
+            "container_class" => "footer-menu",
+            "container" => "nav",
+            "theme_location" => "footer-menu"
+          ));
+        ?>
+      </div>
+      <p><small>&copy; <?php echo get_option('gcf-copyright-notice'); ?></small></p>
+    </div>
 
-    <?php
-      wp_nav_menu(array(
-        "container_class" => "",
-        "container" => "nav",
-        "theme_location" => "social-media-menu"
-      ));
-    ?>
+    <div class="contact-info">
+      <div class="social-media-wrap">
+        <?php
+          wp_nav_menu(array(
+            "container_class" => "social-media-menu",
+            "container" => "nav",
+            "theme_location" => "social-media-menu"
+          ));
+        ?>
+      </div>
+      <div class="address-wrap">
+
+      </div>
+    </div>
+    </footer>
 
   </div>
   <script src="<?php bloginfo("template_url"); ?>/js/vendor/jquery-1.9.1.min.js"></script>

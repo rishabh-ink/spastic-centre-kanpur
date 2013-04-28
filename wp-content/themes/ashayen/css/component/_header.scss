@@ -43,18 +43,18 @@
   }
 }
 
-.navigation-bar {
+.header-menu {
   margin: 20px 0;
 
+  @include horizontal-menu();
+
   ul {
-    list-style: none;
     font-family: $header-font-family;
     font-size: emCalc(19px);
     text-transform: uppercase;
   }
 
   li {
-    display: inline;
     padding: 0 0 0 64px;
   }
 

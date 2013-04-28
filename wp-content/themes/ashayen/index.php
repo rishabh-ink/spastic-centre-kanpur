@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php
+/*
 <section class="featured-posts">
   <ul>
     <?php
@@ -25,6 +27,8 @@
     ?>
   </ul>
 </section>
+*/
+?>
 
 
 <?php get_sidebar(); ?>
