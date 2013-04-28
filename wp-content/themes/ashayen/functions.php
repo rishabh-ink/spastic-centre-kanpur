@@ -1,4 +1,6 @@
 <?php
+  remove_action('wp_head', '_admin_bar_bump_cb');
+
   if(function_exists("register_nav_menus")) {
     register_nav_menus(
       array(
