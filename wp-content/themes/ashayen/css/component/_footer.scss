@@ -4,6 +4,18 @@ footer {
   background: url('img/common/waves.png') repeat-x left top;
   padding-top: 2 * $valueLargest;
 
+  .legal-info,
+  .contact-info {
+    font-size: $small-font-size;
+
+    a {
+      color: $banner-link-color;
+
+      &:hover {
+        color: $banner-link-color-hover;
+      }
+    }
+  }
 
   .legal-info {
     @include grid-column($columns: 8);
@@ -11,10 +23,45 @@ footer {
 
   .contact-info {
     @include grid-column($columns: 4);
+
+    .title {
+      font-weight: bold;
+    }
+
+    .subtitle {
+      color: $subheader-font-color;
+    }
+
+    .line1,
+    .line2,
+    .city,
+    .state, {
+      &:after {
+        content: ","
+      }
+    }
+
+    .country {
+      &:after {
+        content: " \2014"
+      }
+    }
   }
 
   .footer-menu {
     @include horizontal-menu();
+
+    li {
+      &:before {
+        content: "|";
+        padding: 0 16px 0 16px;
+      }
+    }
+
+    li:first-child:before {
+      content: "";
+      padding: 0;
+    }
   }
 
   .social-media-menu {

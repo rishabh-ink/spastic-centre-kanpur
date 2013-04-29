@@ -3,10 +3,17 @@ body {
   background: $body-bg;
 }
 
-.container {
-  @include grid-row();
+.outer-container {
+  $border-image-width: 64px;
   margin: 0 auto;
+  max-width: $row-width + emCalc(2 * $border-image-width);
+
+  padding: 0 $border-image-width;
 
   background: url('img/common/border-left.png') repeat-y left center,
               url('img/common/border-right.png') repeat-y right center;
+}
+
+.container {
+  @include grid-row();
 }

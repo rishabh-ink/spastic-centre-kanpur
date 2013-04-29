@@ -5667,11 +5667,11 @@ table tfoot tr td {
 }
 /* line 61, css/component/_header.scss */
 .header-menu a {
-  color: #6f6f6f;
+  color: #222222;
 }
 /* line 65, css/component/_header.scss */
 .header-menu a:hover {
-  color: #222222;
+  color: #6f6f6f;
 }
 
 /* line 2, css/component/_body.scss */
@@ -5681,6 +5681,14 @@ body {
 }
 
 /* line 6, css/component/_body.scss */
+.outer-container {
+  margin: 0 auto;
+  max-width: 70.5em;
+  padding: 0 64px;
+  background: url("img/common/border-left.png") repeat-y left center, url("img/common/border-right.png") repeat-y right center;
+}
+
+/* line 17, css/component/_body.scss */
 .container {
   width: 100%;
   margin-left: auto;
@@ -5689,8 +5697,6 @@ body {
   margin-bottom: 0;
   max-width: 62.5em;
   *zoom: 1;
-  margin: 0 auto;
-  background: url("img/common/border-left.png") repeat-y left center, url("img/common/border-right.png") repeat-y right center;
 }
 /* line 184, css/lib/foundation/scss/foundation/_foundation-global.scss */
 .container:before, .container:after {
@@ -5724,6 +5730,21 @@ footer:after {
   clear: both;
 }
 /* line 8, css/component/_footer.scss */
+footer .legal-info,
+footer .contact-info {
+  font-size: 75%;
+}
+/* line 11, css/component/_footer.scss */
+footer .legal-info a,
+footer .contact-info a {
+  color: #222222;
+}
+/* line 14, css/component/_footer.scss */
+footer .legal-info a:hover,
+footer .contact-info a:hover {
+  color: #6f6f6f;
+}
+/* line 20, css/component/_footer.scss */
 footer .legal-info {
   position: relative;
   padding-left: 0.9375em;
@@ -5731,13 +5752,32 @@ footer .legal-info {
   width: 66.66667%;
   float: left;
 }
-/* line 12, css/component/_footer.scss */
+/* line 24, css/component/_footer.scss */
 footer .contact-info {
   position: relative;
   padding-left: 0.9375em;
   padding-right: 0.9375em;
   width: 33.33333%;
   float: left;
+}
+/* line 27, css/component/_footer.scss */
+footer .contact-info .title {
+  font-weight: bold;
+}
+/* line 31, css/component/_footer.scss */
+footer .contact-info .subtitle {
+  color: #6f6f6f;
+}
+/* line 39, css/component/_footer.scss */
+footer .contact-info .line1:after,
+footer .contact-info .line2:after,
+footer .contact-info .city:after,
+footer .contact-info .state:after {
+  content: ",";
+}
+/* line 45, css/component/_footer.scss */
+footer .contact-info .country:after {
+  content: " \2014";
 }
 /* line 2, css/util/_mixin.scss */
 footer .footer-menu ul {
@@ -5746,6 +5786,16 @@ footer .footer-menu ul {
 /* line 6, css/util/_mixin.scss */
 footer .footer-menu li {
   display: inline;
+}
+/* line 55, css/component/_footer.scss */
+footer .footer-menu li:before {
+  content: "|";
+  padding: 0 16px 0 16px;
+}
+/* line 61, css/component/_footer.scss */
+footer .footer-menu li:first-child:before {
+  content: "";
+  padding: 0;
 }
 /* line 2, css/util/_mixin.scss */
 footer .social-media-menu ul {
