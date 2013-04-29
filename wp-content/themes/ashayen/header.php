@@ -14,9 +14,10 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title><?php wp_title("|", "true", "right"); ?></title>
-  <meta name="description" content="" />
+  <meta name="description" content="<?php bloginfo("description") ?>" />
   <meta name="viewport" content="width=device-width" />
+  <link rel="profile" href="http://gmpg.org/xfn/11" />
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -24,6 +25,8 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700" />
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Coming+Soon" />
   <script src="<?php bloginfo("template_url"); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
+
+  <title><?php wp_title("|", "true", "right"); ?></title>
 
   <?php wp_head(); ?>
 </head>
