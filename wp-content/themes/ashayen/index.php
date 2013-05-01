@@ -1,38 +1,46 @@
+<?php
+/**
+ * The main template file.
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package ashayen
+ */
+?>
 <?php get_header(); ?>
 
+  <div class="content-area">
+    <div class="site-content" role="main">
 
-<div style="height: 1024px;"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, deleniti accusantium aliquam id dolores illum hic esse cum! Minima, illum quas accusamus alias consequuntur laborum beatae reprehenderit magni autem magnam!</p></div>
+    <?php if ( have_posts() ) : ?>
 
-<?php
-/*
-<section class="featured-posts">
-  <ul>
-    <?php
-      $featured = array(
-        "category_name" => "Featured",
-        "posts_per_page" => 3
-      );
+      <?php /* Start the Loop */ ?>
+      <?php while ( have_posts() ) : the_post(); ?>
 
-      $featuredPosts = new WP_Query($featured);
+        <?php
+          /* Include the Post-Format-specific template for the content.
+           * If you want to overload this in a child theme then include a file
+           * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+           */
+          get_template_part( 'content', get_post_format() );
+        ?>
 
-      while ($featuredPosts -> have_posts()):
-        $featuredPosts -> the_post();
-    ?>
-        <li class="featured-post">
-          <?php the_post_thumbnail("featured"); ?>
-          <div class="caption">
-            <a href="<?php the_permalink(); ?>" class="title"><?php the_title(); ?></a>
-            <?php the_excerpt(); ?>
-          </div>
-        </li>
-    <?php
-      endwhile;
-    ?>
-  </ul>
-</section>
-*/
-?>
+      <?php endwhile; ?>
 
+      <?php ashayen_content_nav( 'nav-below' ); ?>
+
+    <?php else : ?>
+
+      <?php get_template_part( 'no-results', 'index' ); ?>
+
+    <?php endif; ?>
+
+    </div><!-- .content-area -->
+  </div><!-- .site-content -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
