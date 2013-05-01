@@ -1,3 +1,5 @@
+@import "header-menu";
+
 .site-header {
   @include grid-row();
 
@@ -40,29 +42,5 @@
 
   .actions {
     @include grid-column($columns: 4);
-  }
-}
-
-.header-menu {
-  margin: 20px 0;
-
-  @include horizontal-menu();
-
-  ul {
-    font-family: $header-font-family;
-    font-size: emCalc(19px);
-    text-transform: uppercase;
-  }
-
-  li {
-    padding: 0 0 0 64px;
-  }
-
-  a {
-    color: $banner-link-color;
-  }
-
-  a:hover {
-      color: $banner-link-color-hover;
   }
 }

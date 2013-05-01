@@ -2,6 +2,8 @@
 $logo-width: 88px;
 $logo-height: 120px;
 
+
+// Values (deprecated)
 $valueSmallest: 2px;
 $valueSmaller: 4px;
 $valueSmall: 6px;
@@ -19,5 +21,12 @@ $valueXXXLarge: 28px;
 $valueXXXLarger: 30px;
 $valueXXXLargest: 32px;
 
+// header menu colors
 $banner-link-color: #222;
-$banner-link-color-hover: lighten($banner-link-color, 30%);
+$banner-link-color-hover: lighten($banner-link-color, 20%);
+
+$header-menu-about-us-color: hsla(16, 86%, 54%, 1);
+$header-menu-about-disabilities-color: #86328c;
+$header-menu-donate-color: #39b54a;
+$header-menu-home-color: #3fa6f2;
+$header-menu-shop-color: #ec008c;

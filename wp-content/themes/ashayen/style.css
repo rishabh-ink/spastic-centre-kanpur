@@ -5578,7 +5578,58 @@ table tfoot tr td {
   font-style: normal;
 }
 
-/* line 1, css/component/_header.scss */
+/* line 1, css/component/_header-menu.scss */
+.header-menu {
+  margin: 20px 0;
+}
+/* line 2, css/util/_mixin.scss */
+.header-menu ul {
+  list-style: none;
+}
+/* line 6, css/util/_mixin.scss */
+.header-menu li {
+  display: inline;
+}
+/* line 6, css/component/_header-menu.scss */
+.header-menu ul {
+  font-family: "Pick and Roll", "Coming Soon", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 1.1875em;
+  text-transform: uppercase;
+}
+/* line 12, css/component/_header-menu.scss */
+.header-menu li {
+  padding: 0 0 0 64px;
+}
+/* line 16, css/component/_header-menu.scss */
+.header-menu li.home a:hover {
+  color: #3fa6f2;
+}
+/* line 22, css/component/_header-menu.scss */
+.header-menu li.about-us a:hover {
+  color: #ef5b25;
+}
+/* line 28, css/component/_header-menu.scss */
+.header-menu li.about-disabilities a:hover {
+  color: #86328c;
+}
+/* line 34, css/component/_header-menu.scss */
+.header-menu li.donate a:hover {
+  color: #39b54a;
+}
+/* line 40, css/component/_header-menu.scss */
+.header-menu li.shop a:hover {
+  color: #ec008c;
+}
+/* line 46, css/component/_header-menu.scss */
+.header-menu a {
+  color: #222222;
+}
+/* line 49, css/component/_header-menu.scss */
+.header-menu a:hover {
+  color: #555555;
+}
+
+/* line 3, css/component/_header.scss */
 .site-header {
   width: 100%;
   margin-left: auto;
@@ -5599,7 +5650,7 @@ table tfoot tr td {
 .site-header:after {
   clear: both;
 }
-/* line 7, css/component/_header.scss */
+/* line 9, css/component/_header.scss */
 .site-header .masthead {
   position: relative;
   padding-left: 0.9375em;
@@ -5607,7 +5658,7 @@ table tfoot tr td {
   width: 66.66667%;
   float: left;
 }
-/* line 11, css/component/_header.scss */
+/* line 13, css/component/_header.scss */
 .site-header a.logo {
   background: url("img/branding/logo.png") no-repeat;
   padding-left: 88px;
@@ -5615,63 +5666,32 @@ table tfoot tr td {
   color: #222222;
   display: block;
 }
-/* line 21, css/component/_header.scss */
+/* line 23, css/component/_header.scss */
 .site-header a.logo:hover, .site-header a.logo:visited {
   color: #222222;
 }
-/* line 26, css/component/_header.scss */
+/* line 28, css/component/_header.scss */
 .site-header .title {
   margin: 10px 0 0 10px;
 }
-/* line 30, css/component/_header.scss */
+/* line 32, css/component/_header.scss */
 .site-header .description {
   margin: 0 0 0 10px;
   font-family: "Pick and Roll", "Coming Soon", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
-/* line 35, css/component/_header.scss */
+/* line 37, css/component/_header.scss */
 .site-header .secondary {
   margin: 0 0 0 10px;
   color: #6f6f6f;
   font-size: 75%;
 }
-/* line 41, css/component/_header.scss */
+/* line 43, css/component/_header.scss */
 .site-header .actions {
   position: relative;
   padding-left: 0.9375em;
   padding-right: 0.9375em;
   width: 33.33333%;
   float: left;
-}
-
-/* line 46, css/component/_header.scss */
-.header-menu {
-  margin: 20px 0;
-}
-/* line 2, css/util/_mixin.scss */
-.header-menu ul {
-  list-style: none;
-}
-/* line 6, css/util/_mixin.scss */
-.header-menu li {
-  display: inline;
-}
-/* line 51, css/component/_header.scss */
-.header-menu ul {
-  font-family: "Pick and Roll", "Coming Soon", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-size: 1.1875em;
-  text-transform: uppercase;
-}
-/* line 57, css/component/_header.scss */
-.header-menu li {
-  padding: 0 0 0 64px;
-}
-/* line 61, css/component/_header.scss */
-.header-menu a {
-  color: #222222;
-}
-/* line 65, css/component/_header.scss */
-.header-menu a:hover {
-  color: #6f6f6f;
 }
 
 /* line 2, css/component/_body.scss */
@@ -5742,7 +5762,7 @@ footer.page-footer .contact-info a {
 /* line 14, css/component/_footer.scss */
 footer.page-footer .legal-info a:hover,
 footer.page-footer .contact-info a:hover {
-  color: #6f6f6f;
+  color: #555555;
 }
 /* line 20, css/component/_footer.scss */
 footer.page-footer .legal-info {

@@ -58,3 +58,12 @@
           "theme_location" => "header-menu"
         ));
       ?>
+
+      <div class="breadcrumbs">
+        <?php
+          if(function_exists('bcn_display') && !is_front_page())
+          {
+            bcn_display();
+          }
+        ?>
+      </div>

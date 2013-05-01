@@ -18,7 +18,13 @@
 
       <?php while ( have_posts() ) : the_post(); ?>
 
-        <?php get_template_part( 'content', 'page' ); ?>
+        <div class="page-heading">
+          <h2 class="page-title"><?php the_title(); ?></h2>
+        </div>
+
+        <div class="page-content">
+          <?php the_content(); ?>
+        </div>
 
         <?php
           // If comments are open or we have at least one comment, load up the comment template

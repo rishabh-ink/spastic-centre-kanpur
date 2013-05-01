@@ -1,0 +1,53 @@
+.header-menu {
+  margin: 20px 0;
+
+  @include horizontal-menu();
+
+  ul {
+    font-family: $header-font-family;
+    font-size: emCalc(19px);
+    text-transform: uppercase;
+  }
+
+  li {
+    padding: 0 0 0 64px;
+
+    &.home {
+      a:hover {
+        color: $header-menu-home-color;
+      }
+    }
+
+    &.about-us {
+      a:hover {
+        color: $header-menu-about-us-color;
+      }
+    }
+
+    &.about-disabilities {
+      a:hover {
+        color: $header-menu-about-disabilities-color;
+      }
+    }
+
+    &.donate {
+      a:hover {
+        color: $header-menu-donate-color;
+      }
+    }
+
+    &.shop {
+      a:hover {
+        color: $header-menu-shop-color;
+      }
+    }
+  }
+
+  a {
+    color: $banner-link-color;
+
+    &:hover {
+      color: $banner-link-color-hover;
+    }
+  }
+}
