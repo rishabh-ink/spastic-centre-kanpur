@@ -1,46 +1,55 @@
+<?php
+/**
+ * The template for displaying the footer.
+ *
+ * Contains the closing of the id=main div and all content after
+ *
+ * @package ashayen
+ */
+?>
       <footer>
-      <div class="legal-info">
-        <div class="footer-menu-wrap">
-          <?php
-            wp_nav_menu(array(
-              "container_class" => "footer-menu",
-              "container" => "nav",
-              "theme_location" => "footer-menu"
-            ));
-          ?>
+        <div class="legal-info">
+          <div class="footer-menu-wrap">
+            <?php
+              wp_nav_menu(array(
+                "container_class" => "footer-menu",
+                "container" => "nav",
+                "theme_location" => "footer-menu"
+              ));
+            ?>
+          </div>
+          <p>&copy; <?php echo get_option('gcf-copyright-notice'); ?></p>
         </div>
-        <p>&copy; <?php echo get_option('gcf-copyright-notice'); ?></p>
-      </div>
 
-      <div class="contact-info">
-        <div class="social-media-wrap">
-          <?php
-            wp_nav_menu(array(
-              "container_class" => "social-media-menu",
-              "container" => "nav",
-              "theme_location" => "social-media-menu",
-              "items_wrap" => '<ul><li id="item-id">Follow us on: </li>%3$s</ul>'
-            ));
-          ?>
+        <div class="contact-info">
+          <div class="social-media-wrap">
+            <?php
+              wp_nav_menu(array(
+                "container_class" => "social-media-menu",
+                "container" => "nav",
+                "theme_location" => "social-media-menu",
+                "items_wrap" => '<ul><li id="item-id">Follow us on: </li>%3$s</ul>'
+              ));
+            ?>
+          </div>
+          <div class="address">
+            <p>
+              <span class="title"><?php echo get_option('gcf-address-title'); ?></span><br />
+              <span class="subtitle"><?php echo get_option('gcf-address-subtitle'); ?></span><br />
+              <span class="line1"><?php echo get_option('gcf-address-line1'); ?></span><br />
+              <span class="line2"><?php echo get_option('gcf-address-line2'); ?></span><br />
+              <span class="city"><?php echo get_option('gcf-address-city'); ?></span>
+              <span class="state"><?php echo get_option('gcf-address-state'); ?></span>
+              <span class="country"><?php echo get_option('gcf-address-country'); ?></span>
+              <span class="postal-code"><?php echo get_option('gcf-address-postal-code'); ?></span><br />
+
+              <span class="phone"><?php echo get_option('gcf-address-phone'); ?></span><br />
+              <span class="fax"><?php echo get_option('gcf-address-fax'); ?></span><br />
+              <span class="email"><?php echo get_option('gcf-address-email'); ?></span><br />
+
+            </p>
+          </div>
         </div>
-        <div class="address">
-          <p>
-            <span class="title"><?php echo get_option('gcf-address-title'); ?></span><br />
-            <span class="subtitle"><?php echo get_option('gcf-address-subtitle'); ?></span><br />
-            <span class="line1"><?php echo get_option('gcf-address-line1'); ?></span><br />
-            <span class="line2"><?php echo get_option('gcf-address-line2'); ?></span><br />
-            <span class="city"><?php echo get_option('gcf-address-city'); ?></span>
-            <span class="state"><?php echo get_option('gcf-address-state'); ?></span>
-            <span class="country"><?php echo get_option('gcf-address-country'); ?></span>
-            <span class="postal-code"><?php echo get_option('gcf-address-postal-code'); ?></span><br />
-
-            <span class="phone"><?php echo get_option('gcf-address-phone'); ?></span><br />
-            <span class="fax"><?php echo get_option('gcf-address-fax'); ?></span><br />
-            <span class="email"><?php echo get_option('gcf-address-email'); ?></span><br />
-
-          </p>
-        </div>
-      </div>
       </footer>
 
     </div><!-- /.container -->

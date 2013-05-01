@@ -19,7 +19,7 @@
   <link rel="profile" href="http://gmpg.org/xfn/11" />
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <?php /* Place favicon.ico and apple-touch-icon.png in the root directory. */ ?>
 
   <link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/style.css" />
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700" />
@@ -31,7 +31,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
   <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
@@ -39,7 +39,7 @@
     <div class="container">
       <header class="site-header">
         <div class="masthead">
-          <a class="logo" href="<?php echo get_option("home"); ?>">
+          <a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
             <h1 class="title"><?php bloginfo("title"); ?></h1>
             <p class="description"><?php bloginfo("description") ?></p>
             <p class="secondary"><?php echo get_option('gcf-tertiary-title'); ?></p>
