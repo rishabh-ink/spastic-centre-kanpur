@@ -7,7 +7,7 @@
  * @package ashayen
  */
 ?>
-      <footer>
+      <footer class="page-footer">
         <div class="legal-info">
           <div class="footer-menu-wrap">
             <?php
