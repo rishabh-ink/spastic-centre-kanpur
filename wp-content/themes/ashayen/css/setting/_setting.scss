@@ -22,8 +22,8 @@ $valueXXXLarger: 30px;
 $valueXXXLargest: 32px;
 
 // header menu colors
-$banner-link-color: #222;
-$banner-link-color-hover: lighten($banner-link-color, 20%);
+$banner-link-color: #808080;
+$banner-link-color-hover: darken($banner-link-color, 20%);
 
 $header-menu-about-us-color: hsla(16, 86%, 54%, 1);
 $header-menu-about-disabilities-color: #86328c;

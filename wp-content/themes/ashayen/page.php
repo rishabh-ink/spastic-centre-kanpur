@@ -16,10 +16,10 @@
   <div class="content-area">
     <div class="site-content" role="main">
 
-      <?php while ( have_posts() ) : the_post(); ?>
+      <?php while (have_posts()) : the_post(); ?>
 
         <div class="page-heading">
-          <h2 class="page-title"><?php the_title(); ?></h2>
+          <h3><?php the_title(); ?></h3>
         </div>
 
         <div class="page-content">

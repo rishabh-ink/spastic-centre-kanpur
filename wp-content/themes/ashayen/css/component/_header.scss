@@ -44,3 +44,8 @@
     @include grid-column($columns: 4);
   }
 }
+
+.site-content h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
