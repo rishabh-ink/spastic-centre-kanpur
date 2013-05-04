@@ -140,7 +140,9 @@ function ashayen_scripts() {
     wp_enqueue_script( 'ashayen-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20120202' );
   }
 }
-add_action( 'wp_enqueue_scripts', 'ashayen_scripts' );
+
+// @rishabhsrao says: Removing these scripts as there does not seem to be a need.
+// add_action( 'wp_enqueue_scripts', 'ashayen_scripts' );
 
 /**
  * Implement the Custom Header feature

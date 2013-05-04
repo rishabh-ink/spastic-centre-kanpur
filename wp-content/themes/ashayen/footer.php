@@ -43,9 +43,9 @@
               <span class="country"><?php echo get_option('gcf-address-country'); ?></span>
               <span class="postal-code"><?php echo get_option('gcf-address-postal-code'); ?></span><br />
 
-              <span class="phone"><?php echo get_option('gcf-address-phone'); ?></span><br />
-              <span class="fax"><?php echo get_option('gcf-address-fax'); ?></span><br />
-              <span class="email"><?php echo get_option('gcf-address-email'); ?></span><br />
+              <span class="phone"><i class="icon-phone"></i> <?php echo get_option('gcf-address-phone'); ?></span><br />
+              <span class="fax"><i class="icon-phone"></i> <?php echo get_option('gcf-address-fax'); ?></span><br />
+              <span class="email"><i class="icon-mail"></i> <?php echo get_option('gcf-address-email'); ?></span><br />
 
             </p>
           </div>

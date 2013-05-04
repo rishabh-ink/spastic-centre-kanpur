@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Ashayen
 Author: Praveen Y. and Rishabh R.
@@ -5571,6 +5572,86 @@ table tfoot tr td {
 }
 
 @font-face {
+  font-family: 'fontello';
+  src: url("font/fontello/fontello.eot?42278160");
+  src: url("font/fontello/fontello.eot?42278160#iefix") format("embedded-opentype"), url("font/fontello/fontello.woff?42278160") format("woff"), url("font/fontello/fontello.ttf?42278160") format("truetype"), url("font/fontello/fontello.svg?42278160#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?42278160#fontello') format('svg');
+  }
+}
+*/
+/* line 55, css/lib/fontello/_fontello.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - magrins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 59, css/lib/fontello/_fontello.scss */
+.icon-mail:before {
+  content: '\e803';
+}
+
+/* '' */
+/* line 60, css/lib/fontello/_fontello.scss */
+.icon-eye:before {
+  content: '\e09d';
+}
+
+/* '' */
+/* line 61, css/lib/fontello/_fontello.scss */
+.icon-address-book:before {
+  content: '\e0dd';
+}
+
+/* '' */
+/* line 62, css/lib/fontello/_fontello.scss */
+.icon-sitemap:before {
+  content: '\f0e8';
+}
+
+/* '' */
+/* line 63, css/lib/fontello/_fontello.scss */
+.icon-phone:before {
+  content: '\e800';
+}
+
+/* '' */
+/* line 64, css/lib/fontello/_fontello.scss */
+.icon-hammer:before {
+  content: '🔨';
+}
+
+/* '\1f528' */
+@font-face {
   font-family: "Pick and Roll";
   src: url("font/pick-and-roll/pickandroll-webfont.eot");
   src: url("font/pick-and-roll/pickandroll-webfont.eot?#iefix") format("embedded-opentype"), url("font/pick-and-roll/pickandroll-webfont.woff") format("woff"), url("font/pick-and-roll/pickandroll-webfont.ttf") format("truetype");
@@ -5590,43 +5671,111 @@ table tfoot tr td {
 .header-menu li {
   display: inline;
 }
-/* line 6, css/component/_header-menu.scss */
+/* line 12, css/component/_header-menu.scss */
 .header-menu ul {
   font-family: "Pick and Roll", "Coming Soon", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 1.1875em;
   text-transform: uppercase;
 }
-/* line 12, css/component/_header-menu.scss */
+/* line 18, css/component/_header-menu.scss */
 .header-menu li {
-  padding: 0 0 0 64px;
+  padding: 0 0 0 16px;
 }
-/* line 16, css/component/_header-menu.scss */
+/* line 21, css/component/_header-menu.scss */
+.header-menu li a:before {
+  content: " ";
+  background: url("img/common/header-navigation.png") no-repeat;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0.1em 0.4em 0 0;
+}
+/* line 31, css/component/_header-menu.scss */
+.header-menu li.home a:before {
+  background-position: -247px -5px;
+  width: 22px;
+  height: 21px;
+}
+/* line 35, css/component/_header-menu.scss */
 .header-menu li.home a:hover {
   color: #3fa6f2;
 }
-/* line 22, css/component/_header-menu.scss */
+/* line 40, css/component/_header-menu.scss */
+.header-menu li.home a:hover:before {
+  background-position: -215px -5px;
+  width: 22px;
+  height: 21px;
+}
+/* line 47, css/component/_header-menu.scss */
+.header-menu li.about-us a:before {
+  background-position: -38px -5px;
+  width: 23px;
+  height: 22px;
+}
+/* line 51, css/component/_header-menu.scss */
 .header-menu li.about-us a:hover {
   color: #ef5b25;
 }
-/* line 28, css/component/_header-menu.scss */
+/* line 56, css/component/_header-menu.scss */
+.header-menu li.about-us a:hover:before {
+  background-position: -5px -5px;
+  width: 23px;
+  height: 22px;
+}
+/* line 63, css/component/_header-menu.scss */
+.header-menu li.about-disabilities a:before {
+  background-position: -110px -5px;
+  width: 29px;
+  height: 27px;
+}
+/* line 67, css/component/_header-menu.scss */
 .header-menu li.about-disabilities a:hover {
   color: #86328c;
 }
-/* line 34, css/component/_header-menu.scss */
+/* line 72, css/component/_header-menu.scss */
+.header-menu li.about-disabilities a:hover:before {
+  background-position: -71px -5px;
+  width: 29px;
+  height: 27px;
+}
+/* line 79, css/component/_header-menu.scss */
+.header-menu li.donate a:before {
+  background-position: -182px -5px;
+  width: 23px;
+  height: 28px;
+}
+/* line 83, css/component/_header-menu.scss */
 .header-menu li.donate a:hover {
   color: #39b54a;
 }
-/* line 40, css/component/_header-menu.scss */
+/* line 88, css/component/_header-menu.scss */
+.header-menu li.donate a:hover:before {
+  background-position: -149px -5px;
+  width: 23px;
+  height: 28px;
+}
+/* line 95, css/component/_header-menu.scss */
+.header-menu li.shop a:before {
+  background-position: -279px -5px;
+  width: 24px;
+  height: 23px;
+}
+/* line 99, css/component/_header-menu.scss */
 .header-menu li.shop a:hover {
   color: #ec008c;
 }
-/* line 46, css/component/_header-menu.scss */
+/* line 104, css/component/_header-menu.scss */
+.header-menu li.shop a:hover:before {
+  background-position: -313px -5px;
+  width: 24px;
+  height: 23px;
+}
+/* line 110, css/component/_header-menu.scss */
 .header-menu a {
   color: gray;
 }
-/* line 49, css/component/_header-menu.scss */
+/* line 113, css/component/_header-menu.scss */
 .header-menu a:hover {
-  color: #4d4d4d;
+  color: #b3b3b3;
 }
 
 /* line 3, css/component/_header.scss */
@@ -5763,12 +5912,12 @@ footer.page-footer .contact-info {
 /* line 11, css/component/_footer.scss */
 footer.page-footer .legal-info a,
 footer.page-footer .contact-info a {
-  color: gray;
+  color: #222222;
 }
 /* line 14, css/component/_footer.scss */
 footer.page-footer .legal-info a:hover,
 footer.page-footer .contact-info a:hover {
-  color: #4d4d4d;
+  color: #555555;
 }
 /* line 20, css/component/_footer.scss */
 footer.page-footer .legal-info {

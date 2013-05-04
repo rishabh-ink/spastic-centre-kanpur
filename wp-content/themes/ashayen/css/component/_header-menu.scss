@@ -3,6 +3,12 @@
 
   @include horizontal-menu();
 
+  @mixin create-sprite($x: 0, $y: 0, $width: 0, $height: 0) {
+    background-position: $x $y;
+    width: $width;
+    height: $height;
+  }
+
   ul {
     font-family: $header-font-family;
     font-size: emCalc(19px);
@@ -10,44 +16,102 @@
   }
 
   li {
-    padding: 0 0 0 64px;
+    padding: 0 0 0 16px;
+
+    a:before {
+      content: " ";
+      background: url("img/common/header-navigation.png") no-repeat;
+      display: inline-block;
+      overflow: hidden;
+      margin: 0.1em 0.4em 0 0;
+    }
 
     &.home {
-      a:hover {
-        color: $header-menu-home-color;
+      a {
+        &:before {
+          @include create-sprite(-247px, -5px, 22px, 21px);
+        }
+
+        &:hover {
+          color: $header-menu-home-color;
+        }
+      }
+
+      a:hover:before {
+        @include create-sprite(-215px, -5px, 22px, 21px);
       }
     }
 
     &.about-us {
-      a:hover {
-        color: $header-menu-about-us-color;
+      a {
+        &:before {
+          @include create-sprite(-38px, -5px, 23px, 22px);
+        }
+
+        &:hover {
+          color: $header-menu-about-us-color;
+        }
+      }
+
+      a:hover:before {
+        @include create-sprite(-5px, -5px, 23px, 22px);
       }
     }
 
     &.about-disabilities {
-      a:hover {
-        color: $header-menu-about-disabilities-color;
+      a {
+        &:before {
+          @include create-sprite(-110px, -5px, 29px, 27px);
+        }
+
+        &:hover {
+          color: $header-menu-about-disabilities-color;
+        }
+      }
+
+      a:hover:before {
+        @include create-sprite(-71px, -5px, 29px, 27px);
       }
     }
 
     &.donate {
-      a:hover {
-        color: $header-menu-donate-color;
+      a {
+        &:before {
+          @include create-sprite(-182px, -5px, 23px, 28px);
+        }
+
+        &:hover {
+          color: $header-menu-donate-color;
+        }
+      }
+
+      a:hover:before {
+        @include create-sprite(-149px, -5px, 23px, 28px);
       }
     }
 
     &.shop {
-      a:hover {
-        color: $header-menu-shop-color;
+      a {
+        &:before {
+          @include create-sprite(-279px, -5px, 24px, 23px);
+        }
+
+        &:hover {
+          color: $header-menu-shop-color;
+        }
+      }
+
+      a:hover:before {
+        @include create-sprite(-313px, -5px, 24px, 23px);
       }
     }
   }
 
   a {
-    color: $banner-link-color;
+    color: $header-menu-color;
 
     &:hover {
-      color: $banner-link-color-hover;
+      color: $header-menu-color-hover;
     }
   }
 }
