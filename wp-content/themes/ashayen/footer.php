@@ -54,8 +54,10 @@
 
     </div><!-- /.container -->
   </div> <!-- /.outer-container -->
-  <script src="<?php bloginfo("template_url"); ?>/js/vendor/jquery-1.9.1.min.js"></script>
-  <script>window.jQuery || document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"><\/script>')</script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="<?php bloginfo("template_url"); ?>/js/vendor/foundation/foundation.min.js"></script>
+  <script src="<?php bloginfo("template_url"); ?>/js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>

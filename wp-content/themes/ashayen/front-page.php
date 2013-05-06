@@ -16,7 +16,7 @@
   <div class="content-area">
     <div class="site-content" role="main">
 
-      <ul class="featured-posts">
+      <ul data-orbit="data-orbit" class="featured-posts">
 
         <?php
           $featuredPosts = new WP_Query(array(
@@ -29,8 +29,11 @@
         ?>
 
           <li class="featured-post">
-            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-            <p><?php the_excerpt(); ?></p>
+            <?php the_post_thumbnail("full"); ?>
+
+            <div class="orbit-caption">
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            </div>
           </li>
 
         <?php
