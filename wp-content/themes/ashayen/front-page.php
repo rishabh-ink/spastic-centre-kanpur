@@ -19,17 +19,17 @@
       <ul data-orbit="data-orbit" class="featured-posts">
 
         <?php
-          $featuredPosts = new WP_Query(array(
+          $featured_posts = new WP_Query(array(
             "category_name" => "Featured",
             "posts_per_page" => 3
           ));
 
-          while($featuredPosts -> have_posts()):
-            $featuredPosts -> the_post();
+          while($featured_posts -> have_posts()):
+            $featured_posts -> the_post();
         ?>
 
           <li class="featured-post">
-            <?php the_post_thumbnail("full"); ?>
+            <?php the_post_thumbnail(array('auto', 320)); ?>
 
             <div class="orbit-caption">
               <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
