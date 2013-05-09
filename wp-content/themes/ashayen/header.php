@@ -22,8 +22,7 @@
   <?php /* Place favicon.ico and apple-touch-icon.png in the root directory. */ ?>
 
   <link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/style.css" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Coming+Soon" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Open+Sans:400,700|Coming+Soon"/>
   <script src="<?php bloginfo("template_url"); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
 
   <title><?php wp_title("|", "true", "right"); ?></title>
@@ -59,11 +58,9 @@
         ));
       ?>
 
-      <div class="breadcrumbs">
-        <?php
-          if(function_exists('bcn_display') && !is_front_page())
-          {
-            bcn_display();
-          }
-        ?>
-      </div>
+      <?php
+        if(function_exists('bcn_display') && !is_front_page())
+        {
+          bcn_display();
+        }
+      ?>

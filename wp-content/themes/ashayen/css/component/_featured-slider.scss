@@ -1,0 +1,26 @@
+.orbit-container {
+  height: $slider-height;
+
+  .orbit-slides-container {
+    &>* {
+      .orbit-caption {
+        color: $orbit-caption-font-color;
+        * { color: $orbit-caption-font-color; }
+
+        height: $slider-caption-height;
+        text-align: right;
+        font-size: 1.1em;
+
+        h3 {
+          font: normal 3em "Love Ya Like A Sister", serif;
+          color: white;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.orbit-slides-container img {
+  width: 100%;
+}

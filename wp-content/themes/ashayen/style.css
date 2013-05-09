@@ -3846,7 +3846,7 @@ form.custom .custom.disabled {
   position: absolute;
   bottom: 0;
   background-color: black;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(70, 22, 35, 0.56);
   color: #fff;
   width: 100%;
   padding: 10px 14px;
@@ -3854,7 +3854,7 @@ form.custom .custom.disabled {
 }
 /* line 60, css/lib/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-slides-container > * .orbit-caption * {
-  color: white;
+  color: #eabe1f;
 }
 /* line 65, css/lib/foundation/scss/foundation/components/_orbit.scss */
 .orbit-container .orbit-slide-number {
@@ -5659,6 +5659,32 @@ table tfoot tr td {
   font-style: normal;
 }
 
+/* line 1, css/component/_featured-slider.scss */
+.orbit-container {
+  height: 460px;
+}
+/* line 6, css/component/_featured-slider.scss */
+.orbit-container .orbit-slides-container > * .orbit-caption {
+  color: #eabe1f;
+  height: 150px;
+  text-align: right;
+  font-size: 1.1em;
+}
+/* line 8, css/component/_featured-slider.scss */
+.orbit-container .orbit-slides-container > * .orbit-caption * {
+  color: #eabe1f;
+}
+/* line 14, css/component/_featured-slider.scss */
+.orbit-container .orbit-slides-container > * .orbit-caption h3 {
+  font: normal 3em "Love Ya Like A Sister", serif;
+  color: white;
+}
+
+/* line 23, css/component/_featured-slider.scss */
+.orbit-slides-container img {
+  width: 100%;
+}
+
 /* line 1, css/component/_header-menu.scss */
 .header-menu {
   margin: 20px 0;
@@ -5844,7 +5870,7 @@ table tfoot tr td {
 }
 
 /* line 48, css/component/_header.scss */
-.site-content h3 {
+.page-heading h3 {
   font-weight: normal;
   text-transform: uppercase;
 }

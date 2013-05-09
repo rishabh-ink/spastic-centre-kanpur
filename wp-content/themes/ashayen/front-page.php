@@ -29,11 +29,14 @@
         ?>
 
           <li class="featured-post">
-            <?php the_post_thumbnail(array('auto', 320)); ?>
+            <a href="<?php the_permalink(); ?>">
+              <?php the_post_thumbnail(array('auto', 320)); ?>
 
-            <div class="orbit-caption">
-              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-            </div>
+              <div class="orbit-caption">
+                <h3><?php the_title(); ?></h3>
+                <p><?php the_field("Subtitle"); ?></p>
+              </div>
+            </a>
           </li>
 
         <?php
