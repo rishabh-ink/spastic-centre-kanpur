@@ -5678,9 +5678,10 @@ table tfoot tr td {
 .orbit-container .orbit-slides-container > * .orbit-caption h3 {
   font: normal 3em "Love Ya Like A Sister", serif;
   color: white;
+  margin-bottom: 0;
 }
 
-/* line 23, css/component/_featured-slider.scss */
+/* line 24, css/component/_featured-slider.scss */
 .orbit-slides-container img {
   width: 100%;
 }
@@ -5697,17 +5698,17 @@ table tfoot tr td {
 .header-menu li {
   display: inline;
 }
-/* line 12, css/component/_header-menu.scss */
+/* line 6, css/component/_header-menu.scss */
 .header-menu ul {
   font-family: "Pick and Roll", "Coming Soon", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 1.1875em;
   text-transform: uppercase;
 }
-/* line 18, css/component/_header-menu.scss */
+/* line 12, css/component/_header-menu.scss */
 .header-menu li {
   padding: 0 0 0 16px;
 }
-/* line 21, css/component/_header-menu.scss */
+/* line 15, css/component/_header-menu.scss */
 .header-menu li a:before {
   content: " ";
   background: url("img/common/header-navigation.png") no-repeat;
@@ -5715,91 +5716,91 @@ table tfoot tr td {
   overflow: hidden;
   margin: 0.1em 0.4em 0 0;
 }
-/* line 31, css/component/_header-menu.scss */
+/* line 25, css/component/_header-menu.scss */
 .header-menu li.home a:before {
   background-position: -247px -5px;
   width: 22px;
   height: 21px;
 }
-/* line 35, css/component/_header-menu.scss */
+/* line 29, css/component/_header-menu.scss */
 .header-menu li.home a:hover {
   color: #3fa6f2;
 }
-/* line 40, css/component/_header-menu.scss */
+/* line 34, css/component/_header-menu.scss */
 .header-menu li.home a:hover:before {
   background-position: -215px -5px;
   width: 22px;
   height: 21px;
 }
-/* line 47, css/component/_header-menu.scss */
+/* line 41, css/component/_header-menu.scss */
 .header-menu li.about-us a:before {
   background-position: -38px -5px;
   width: 23px;
   height: 22px;
 }
-/* line 51, css/component/_header-menu.scss */
+/* line 45, css/component/_header-menu.scss */
 .header-menu li.about-us a:hover {
   color: #ef5b25;
 }
-/* line 56, css/component/_header-menu.scss */
+/* line 50, css/component/_header-menu.scss */
 .header-menu li.about-us a:hover:before {
   background-position: -5px -5px;
   width: 23px;
   height: 22px;
 }
-/* line 63, css/component/_header-menu.scss */
+/* line 57, css/component/_header-menu.scss */
 .header-menu li.about-disabilities a:before {
   background-position: -110px -5px;
   width: 29px;
   height: 27px;
 }
-/* line 67, css/component/_header-menu.scss */
+/* line 61, css/component/_header-menu.scss */
 .header-menu li.about-disabilities a:hover {
   color: #86328c;
 }
-/* line 72, css/component/_header-menu.scss */
+/* line 66, css/component/_header-menu.scss */
 .header-menu li.about-disabilities a:hover:before {
   background-position: -71px -5px;
   width: 29px;
   height: 27px;
 }
-/* line 79, css/component/_header-menu.scss */
+/* line 73, css/component/_header-menu.scss */
 .header-menu li.donate a:before {
   background-position: -182px -5px;
   width: 23px;
   height: 28px;
 }
-/* line 83, css/component/_header-menu.scss */
+/* line 77, css/component/_header-menu.scss */
 .header-menu li.donate a:hover {
   color: #39b54a;
 }
-/* line 88, css/component/_header-menu.scss */
+/* line 82, css/component/_header-menu.scss */
 .header-menu li.donate a:hover:before {
   background-position: -149px -5px;
   width: 23px;
   height: 28px;
 }
-/* line 95, css/component/_header-menu.scss */
+/* line 89, css/component/_header-menu.scss */
 .header-menu li.shop a:before {
   background-position: -279px -5px;
   width: 24px;
   height: 23px;
 }
-/* line 99, css/component/_header-menu.scss */
+/* line 93, css/component/_header-menu.scss */
 .header-menu li.shop a:hover {
   color: #ec008c;
 }
-/* line 104, css/component/_header-menu.scss */
+/* line 98, css/component/_header-menu.scss */
 .header-menu li.shop a:hover:before {
   background-position: -313px -5px;
   width: 24px;
   height: 23px;
 }
-/* line 110, css/component/_header-menu.scss */
+/* line 104, css/component/_header-menu.scss */
 .header-menu a {
   color: gray;
 }
-/* line 113, css/component/_header-menu.scss */
+/* line 107, css/component/_header-menu.scss */
 .header-menu a:hover {
   color: #b3b3b3;
 }
@@ -5998,11 +5999,63 @@ footer.page-footer .footer-menu li:first-child:before {
   content: "";
   padding: 0;
 }
+
 /* line 2, css/util/_mixin.scss */
-footer.page-footer .social-media-menu ul {
+.social-media-menu ul {
   list-style: none;
 }
 /* line 6, css/util/_mixin.scss */
-footer.page-footer .social-media-menu li {
+.social-media-menu li {
   display: inline;
+}
+/* line 72, css/component/_footer.scss */
+.social-media-menu .menu-item a {
+  background: url("img/common/social-media.png") no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+/* line 79, css/component/_footer.scss */
+.social-media-menu .menu-item.facebook a {
+  background-position: -5px, -5px;
+}
+/* line 83, css/component/_footer.scss */
+.social-media-menu .menu-item.flickr a {
+  background-position: -47px, -5px;
+}
+/* line 87, css/component/_footer.scss */
+.social-media-menu .menu-item.gmail a {
+  background-position: -89px, -5px;
+}
+/* line 91, css/component/_footer.scss */
+.social-media-menu .menu-item.linkedin a {
+  background-position: -131px, -5px;
+}
+/* line 95, css/component/_footer.scss */
+.social-media-menu .menu-item.picasa a {
+  background-position: -173px, -5px;
+}
+/* line 99, css/component/_footer.scss */
+.social-media-menu .menu-item.rss a {
+  background-position: -215px, -5px;
+}
+/* line 103, css/component/_footer.scss */
+.social-media-menu .menu-item.skype a {
+  background-position: -257px, -5px;
+}
+/* line 107, css/component/_footer.scss */
+.social-media-menu .menu-item.twitter a {
+  background-position: -299px, -5px;
+}
+/* line 111, css/component/_footer.scss */
+.social-media-menu .menu-item.vimeo a {
+  background-position: -341px, -5px;
+}
+/* line 115, css/component/_footer.scss */
+.social-media-menu .menu-item.wordpress a {
+  background-position: -383px, -5px;
+}
+/* line 119, css/component/_footer.scss */
+.social-media-menu .menu-item.youtube a {
+  background-position: -425px, -5px;
 }

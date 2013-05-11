@@ -63,8 +63,61 @@ footer.page-footer {
       padding: 0;
     }
   }
+}
 
-  .social-media-menu {
-    @include horizontal-menu();
+.social-media-menu {
+  @include horizontal-menu();
+
+  .menu-item {
+    a {
+      background: url("img/common/social-media.png") no-repeat;
+      width: 32px;
+      height: 32px;
+      display: inline-block;
+    }
+
+    &.facebook a {
+      background-position: -5px, -5px;
+    }
+
+    &.flickr a {
+      background-position: -47px, -5px;
+    }
+
+    &.gmail a {
+      background-position: -89px, -5px;
+    }
+
+    &.linkedin a {
+      background-position: -131px, -5px;
+    }
+
+    &.picasa a {
+      background-position: -173px, -5px;
+    }
+
+    &.rss a {
+      background-position: -215px, -5px;
+    }
+
+    &.skype a {
+      background-position: -257px, -5px;
+    }
+
+    &.twitter a {
+      background-position: -299px, -5px;
+    }
+
+    &.vimeo a {
+      background-position: -341px, -5px;
+    }
+
+    &.wordpress a {
+      background-position: -383px, -5px;
+    }
+
+    &.youtube a {
+      background-position: -425px, -5px;
+    }
   }
 }

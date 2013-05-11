@@ -30,7 +30,7 @@
 
           <li class="featured-post">
             <a href="<?php the_permalink(); ?>">
-              <?php the_post_thumbnail(array('auto', 320)); ?>
+              <?php the_post_thumbnail(array('auto', 460)); ?>
 
               <div class="orbit-caption">
                 <h3><?php the_title(); ?></h3>
