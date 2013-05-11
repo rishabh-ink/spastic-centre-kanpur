@@ -18,7 +18,7 @@ Version: 1.0.0
 /* line 9, css/lib/foundation/scss/foundation/components/_global.scss */
 html,
 body {
-  font-size: 100%;
+  font-size: 16px;
 }
 
 /* line 12, css/lib/foundation/scss/foundation/components/_global.scss */
@@ -6013,49 +6013,63 @@ footer.page-footer .footer-menu li:first-child:before {
   background: url("img/common/social-media.png") no-repeat;
   width: 32px;
   height: 32px;
+  margin: 5px 5px 5px 0;
   display: inline-block;
+  opacity: 0.5;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
-/* line 79, css/component/_footer.scss */
+/* line 83, css/component/_footer.scss */
+.social-media-menu .menu-item a:hover {
+  opacity: 1;
+}
+/* line 87, css/component/_footer.scss */
 .social-media-menu .menu-item.facebook a {
   background-position: -5px, -5px;
 }
-/* line 83, css/component/_footer.scss */
+/* line 91, css/component/_footer.scss */
 .social-media-menu .menu-item.flickr a {
   background-position: -47px, -5px;
 }
-/* line 87, css/component/_footer.scss */
+/* line 95, css/component/_footer.scss */
 .social-media-menu .menu-item.gmail a {
   background-position: -89px, -5px;
 }
-/* line 91, css/component/_footer.scss */
+/* line 99, css/component/_footer.scss */
 .social-media-menu .menu-item.linkedin a {
   background-position: -131px, -5px;
 }
-/* line 95, css/component/_footer.scss */
+/* line 103, css/component/_footer.scss */
 .social-media-menu .menu-item.picasa a {
   background-position: -173px, -5px;
 }
-/* line 99, css/component/_footer.scss */
+/* line 107, css/component/_footer.scss */
 .social-media-menu .menu-item.rss a {
   background-position: -215px, -5px;
 }
-/* line 103, css/component/_footer.scss */
+/* line 111, css/component/_footer.scss */
 .social-media-menu .menu-item.skype a {
   background-position: -257px, -5px;
 }
-/* line 107, css/component/_footer.scss */
+/* line 115, css/component/_footer.scss */
 .social-media-menu .menu-item.twitter a {
   background-position: -299px, -5px;
 }
-/* line 111, css/component/_footer.scss */
+/* line 119, css/component/_footer.scss */
 .social-media-menu .menu-item.vimeo a {
   background-position: -341px, -5px;
 }
-/* line 115, css/component/_footer.scss */
+/* line 123, css/component/_footer.scss */
 .social-media-menu .menu-item.wordpress a {
   background-position: -383px, -5px;
 }
-/* line 119, css/component/_footer.scss */
+/* line 127, css/component/_footer.scss */
 .social-media-menu .menu-item.youtube a {
   background-position: -425px, -5px;
 }

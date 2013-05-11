@@ -28,7 +28,7 @@
                 "container_class" => "social-media-menu",
                 "container" => "nav",
                 "theme_location" => "social-media-menu",
-                "items_wrap" => '<ul><li id="item-id">Follow us on: </li>%3$s</ul>'
+                /* "items_wrap" => '<ul><li id="item-id">Follow us on: </li>%3$s</ul>' */
               ));
             ?>
           </div>

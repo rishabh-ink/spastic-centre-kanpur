@@ -73,7 +73,15 @@ footer.page-footer {
       background: url("img/common/social-media.png") no-repeat;
       width: 32px;
       height: 32px;
+      margin: 5px 5px 5px 0;
       display: inline-block;
+      opacity: 0.5;
+      @include transition-property(opacity);
+      @include transition-duration(0.3s);
+    }
+
+    a:hover {
+      opacity: 1;
     }
 
     &.facebook a {
