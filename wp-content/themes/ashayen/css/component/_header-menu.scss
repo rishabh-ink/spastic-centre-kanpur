@@ -36,6 +36,15 @@
       }
     }
 
+    &.current-menu-item.home {
+      a {
+        color: $header-menu-home-color;
+        &:before {
+          @include create-sprite(-215px, -5px, 22px, 21px);
+        }
+      }
+    }
+
     &.about-us {
       a {
         &:before {
@@ -49,6 +58,15 @@
 
       a:hover:before {
         @include create-sprite(-5px, -5px, 23px, 22px);
+      }
+    }
+
+    &.current-menu-item.about-us {
+      a {
+        color: $header-menu-about-us-color;
+        &:before {
+          @include create-sprite(-5px, -5px, 23px, 22px);
+        }
       }
     }
 
@@ -68,6 +86,15 @@
       }
     }
 
+    &.current-menu-item.about-disabilities {
+      a {
+        color: $header-menu-about-disabilities-color;
+        &:before {
+          @include create-sprite(-71px, -5px, 29px, 27px);
+        }
+      }
+    }
+
     &.donate {
       a {
         &:before {
@@ -84,6 +111,15 @@
       }
     }
 
+    &.current-menu-item.donate {
+      a {
+        color: $header-menu-donate-color;
+        &:before {
+          @include create-sprite(-149px, -5px, 23px, 28px);
+        }
+      }
+    }
+
     &.shop {
       a {
         &:before {
@@ -97,6 +133,15 @@
 
       a:hover:before {
         @include create-sprite(-313px, -5px, 24px, 23px);
+      }
+    }
+
+    &.current-menu-item.shop {
+      a {
+        color: $header-menu-shop-color;
+        &:before {
+          @include create-sprite(-313px, -5px, 24px, 23px);
+        }
       }
     }
   }
