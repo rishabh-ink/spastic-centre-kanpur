@@ -45,7 +45,12 @@
   }
 }
 
-.page-heading h3 {
+@mixin page-heading($margin: 1em) {
   font-weight: normal;
   text-transform: uppercase;
+  margin: $margin auto;
+}
+
+.page-heading h3 {
+  @include page-heading();
 }

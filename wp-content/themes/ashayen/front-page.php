@@ -44,6 +44,21 @@
         ?>
       </ul>
 
+      <ul class="sub-featured-posts">
+        <li>
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, libero, doloribus obcaecati velit voluptates possimus dolores tenetur ex sed facere magnam illum accusamus laborum ipsam deserunt nam nemo recusandae vitae.</p>
+        </li>
+        <li>
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, libero, doloribus obcaecati velit voluptates possimus dolores tenetur ex sed facere magnam illum accusamus laborum ipsam deserunt nam nemo recusandae vitae.</p>
+        </li>
+        <li>
+          <h3>Title</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, libero, doloribus obcaecati velit voluptates possimus dolores tenetur ex sed facere magnam illum accusamus laborum ipsam deserunt nam nemo recusandae vitae.</p>
+        </li>
+      </ul>
+
     </div><!-- .content-area -->
   </div><!-- .site-content -->
 

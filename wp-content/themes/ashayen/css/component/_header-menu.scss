@@ -18,6 +18,8 @@
       display: inline-block;
       overflow: hidden;
       margin: 0.1em 0.4em 0 0;
+      @include transition-property(background-position);
+      @include transition-duration(0.2s);
     }
 
     &.home {
@@ -148,6 +150,8 @@
 
   a {
     color: $header-menu-color;
+    @include transition-property(color);
+    @include transition-duration(0.5s);
 
     &:hover {
       color: $header-menu-color-hover;

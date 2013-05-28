@@ -19,7 +19,7 @@
       <?php while (have_posts()) : the_post(); ?>
 
         <div class="page-heading">
-          <h3><?php the_title(); ?></h3>
+          <h3 class="<?php echo basename(get_permalink()); ?>"><?php the_title(); ?></h3>
         </div>
 
         <div class="page-content">

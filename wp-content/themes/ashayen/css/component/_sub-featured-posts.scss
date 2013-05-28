@@ -1,0 +1,14 @@
+.sub-featured-posts {
+  @include grid-row();
+
+  list-style: none;
+
+  h3 {
+    @include page-heading($margin: 0.25em);
+  }
+
+  li {
+    @include grid-column($columns: 4);
+    margin: 1em auto;
+  }
+}
