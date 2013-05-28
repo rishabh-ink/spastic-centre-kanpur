@@ -4,9 +4,7 @@
  *
  * @package ashayen
  */
-?>
 
-<?php
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
@@ -148,17 +146,7 @@ function ashayen_scripts() {
  * Implement the Custom Header feature
  */
 //require( get_template_directory() . '/inc/custom-header.php' );
-?>
 
-
-
-
-
-
-
-
-
-<?php
 remove_action('wp_head', '_admin_bar_bump_cb');
 
 if(function_exists("register_nav_menus")) {
