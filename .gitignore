@@ -8,3 +8,4 @@ sitemap.xml
 sitemap.xml
 sitemap.xml.gz
 .sass-cache
+*.sublime-*
