@@ -88,18 +88,19 @@
     }
 
     &.home {
-      & > a {
-        &:before {
-          @include create-sprite(0, -224px, 32px, 32px);
-        }
-
-        &:hover {
+      &:hover {
+        & > a {
+          &:before {
+            @include create-sprite(0, -192px, 32px, 32px);
+          }
           color: $header-menu-home-color;
         }
       }
 
-      & > a:hover:before {
-        @include create-sprite(0, -192px, 32px, 32px);
+      & > a {
+        &:before {
+          @include create-sprite(0, -224px, 32px, 32px);
+        }
       }
 
       .sub-menu {
@@ -120,18 +121,19 @@
     }
 
     &.about-us {
-      & > a {
-        &:before {
-          @include create-sprite(0, -32px, 32px, 32px);
-        }
-
-        &:hover {
+      &:hover {
+        & > a {
+          &:before {
+            @include create-sprite(0, 0, 32px, 32px);
+          }
           color: $header-menu-about-us-color;
         }
       }
 
-      & > a:hover:before {
-        @include create-sprite(0, 0, 32px, 32px);
+      & > a {
+        &:before {
+          @include create-sprite(0, -32px, 32px, 32px);
+        }
       }
 
       .sub-menu {
@@ -152,18 +154,19 @@
     }
 
     &.about-disabilities {
-      & > a {
-        &:before {
-          @include create-sprite(0, -96px, 32px, 32px);
-        }
-
-        &:hover {
+      &:hover {
+        & > a {
+          &:before {
+            @include create-sprite(0, -64px, 32px, 32px);
+          }
           color: $header-menu-about-disabilities-color;
         }
       }
 
-      & > a:hover:before {
-        @include create-sprite(0, -64px, 32px, 32px);
+      & > a {
+        &:before {
+          @include create-sprite(0, -96px, 32px, 32px);
+        }
       }
 
       .sub-menu {
@@ -184,18 +187,19 @@
     }
 
     &.donate {
-      & > a {
-        &:before {
-          @include create-sprite(0, -160px, 32px, 32px);
-        }
-
-        &:hover {
+      &:hover {
+        & > a {
+          &:before {
+            @include create-sprite(0, -128px, 32px, 32px);
+          }
           color: $header-menu-donate-color;
         }
       }
 
-      & > a:hover:before {
-        @include create-sprite(0, -128px, 32px, 32px);
+      & > a {
+        &:before {
+          @include create-sprite(0, -160px, 32px, 32px);
+        }
       }
 
       .sub-menu {
@@ -216,18 +220,19 @@
     }
 
     &.shop {
-      & > a {
-        &:before {
-          @include create-sprite(0, -288px, 32px, 32px);
-        }
-
-        &:hover {
+      &:hover {
+        & > a {
+          &:before {
+            @include create-sprite(0, -256px, 32px, 32px);
+          }
           color: $header-menu-shop-color;
         }
       }
 
-      & > a:hover:before {
-        @include create-sprite(0, -256px, 32px, 32px);
+      & > a {
+        &:before {
+          @include create-sprite(0, -288px, 32px, 32px);
+        }
       }
 
       .sub-menu {
