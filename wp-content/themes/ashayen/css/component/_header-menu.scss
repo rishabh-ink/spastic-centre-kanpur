@@ -12,6 +12,13 @@
 
   .sub-menu {
     display: none;
+    margin: 0;
+
+    li {
+      width: 100%;
+      padding: 5px 10px;
+      margin: 0;
+    }
   }
 
   // Target only the first level menu.
@@ -20,16 +27,24 @@
     top: 100%;
   }
 
+
   li {
-    padding: 0 0 0 25px;
+    // Space out the menu page items.
+    margin: 0 0 0 30px;
+
+    padding: 0 5px 0 5px;
     float: left;
     position: relative;
 
-    &:hover > .sub-menu {
-      display: block;
-      position: absolute;
-      width: 200px;
-      z-index: 1000;
+    &:hover {
+      // background-color: red;
+
+      & > .sub-menu {
+        display: block;
+        position: absolute;
+        width: 300px;
+        z-index: 1000;
+      }
     }
 
     a:before {
@@ -170,6 +185,7 @@
 
   a {
     color: $header-menu-color;
+    display: block;
     @include transition-property(color);
     @include transition-duration(0.5s);
 
