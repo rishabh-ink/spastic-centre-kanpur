@@ -13,11 +13,27 @@
   .sub-menu {
     display: none;
     margin: 0;
+    padding: 5px;
+    position: absolute;
+    width: $sub-menu-width;
+    z-index: 1000;
+    text-transform: none;
+    font: 1rem $body-font-family;
+    background: $sub-menu-background-color;
+    @include border-radius(10px);
 
     li {
       width: 100%;
-      padding: 5px 10px;
+      padding: 2% 5%;
       margin: 0;
+      border-left: 4px solid $sub-menu-background-color;
+
+      &:hover {
+        border-left-color: $sub-menu-item-hover-color;
+        a {
+          color: $sub-menu-item-hover-color;
+        }
+      }
     }
   }
 
@@ -37,13 +53,11 @@
     position: relative;
 
     &:hover {
-      // background-color: red;
+      cursor: pointer;
 
+      // Display the menu only on mouse over.
       & > .sub-menu {
         display: block;
-        position: absolute;
-        width: 300px;
-        z-index: 1000;
       }
     }
 
@@ -71,6 +85,13 @@
       & > a:hover:before {
         @include create-sprite(0, -192px, 32px, 32px);
       }
+
+      .sub-menu {
+        border-bottom: $sub-menu-bottom-border-width solid $header-menu-home-color;
+        li:hover {
+          border-left-color: $header-menu-home-color;
+        }
+      }
     }
 
     &.current-menu-item.home {
@@ -95,6 +116,13 @@
 
       & > a:hover:before {
         @include create-sprite(0, 0, 32px, 32px);
+      }
+
+      .sub-menu {
+        border-bottom: $sub-menu-bottom-border-width solid $header-menu-about-us-color;
+        li:hover {
+          border-left-color: $header-menu-about-us-color;
+        }
       }
     }
 
@@ -121,6 +149,13 @@
       & > a:hover:before {
         @include create-sprite(0, -64px, 32px, 32px);
       }
+
+      .sub-menu {
+        border-bottom: $sub-menu-bottom-border-width solid $header-menu-about-disabilities-color;
+        li:hover {
+          border-left-color: $header-menu-about-disabilities-color;
+        }
+      }
     }
 
     &.current-menu-item.about-disabilities {
@@ -145,6 +180,13 @@
 
       & > a:hover:before {
         @include create-sprite(0, -128px, 32px, 32px);
+      }
+
+      .sub-menu {
+        border-bottom: $sub-menu-bottom-border-width solid $header-menu-donate-color;
+        li:hover {
+          border-left-color: $header-menu-donate-color;
+        }
       }
     }
 
@@ -171,6 +213,13 @@
       & > a:hover:before {
         @include create-sprite(0, -256px, 32px, 32px);
       }
+
+      .sub-menu {
+        border-bottom: $sub-menu-bottom-border-width solid $header-menu-shop-color;
+        li:hover {
+          border-left-color: $header-menu-shop-color;
+        }
+      }
     }
 
     &.current-menu-item.shop {
@@ -186,11 +235,5 @@
   a {
     color: $header-menu-color;
     display: block;
-    @include transition-property(color);
-    @include transition-duration(0.5s);
-
-    &:hover {
-      color: $header-menu-color-hover;
-    }
   }
 }

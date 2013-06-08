@@ -24,7 +24,7 @@ $valueXXXLargest: 32px;
 $banner-link-color: #222;
 $banner-link-color-hover: lighten($banner-link-color, 20%);
 
-// header menu colors
+// Header menu
 $header-menu-color: #808080;
 $header-menu-color-hover: lighten($header-menu-color, 20%);
 $header-menu-about-us-color: hsla(16, 86%, 54%, 1);
@@ -34,6 +34,14 @@ $header-menu-home-color: #3fa6f2;
 $header-menu-shop-color: #ec008c;
 $header-menu-font-size: remCalc(22px);
 $header-menu-font-family: $header-font-family;
+
+// Sub menu
+$sub-menu-background-color: hsla(0, 50%, 100%, 0.95);
+$sub-menu-item-hover-color: $header-font-color;
+$sub-menu-background: url(img/common/noise.png);
+$sub-menu-width: 300px;
+$sub-menu-bottom-border-width: 10px;
+
 // Featured image slider
 $slider-height: 460px;
 $slider-caption-height: 150px;
