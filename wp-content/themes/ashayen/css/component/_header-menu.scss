@@ -83,6 +83,8 @@
       margin: 0.1rem 0.1rem 0 0;
       @include transition-property(background-position);
       @include transition-duration(0.2s);
+      position: relative;
+      top: 8px;
     }
 
     &.home {
