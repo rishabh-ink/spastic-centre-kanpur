@@ -21,6 +21,20 @@
     font: 1rem $body-font-family;
     background: $sub-menu-background-color;
     @include border-radius(10px);
+    @include single-box-shadow($color: $sub-menu-background-color, $hoff: 0, $voff: 0, $blur: 5px, $spread: 0, $inset: false);
+
+    &:before {
+      content: " ";
+      display: block;
+      width: 0;
+      height: 0;
+      position: relative;
+      top: -13px;
+      left: 30px;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid $sub-menu-background-color;
+    }
 
     li {
       width: 100%;
