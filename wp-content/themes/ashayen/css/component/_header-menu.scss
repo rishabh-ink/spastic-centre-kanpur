@@ -2,30 +2,50 @@
   margin: 20px 0;
 
   @include horizontal-menu();
+  @include clearfix();
 
   ul {
-    font-family: $header-font-family;
-    font-size: emCalc(19px);
+    font-family: $header-menu-font-family;
+    font-size: $header-menu-font-size;
     text-transform: uppercase;
   }
 
+  .sub-menu {
+    display: none;
+  }
+
+  // Target only the first level menu.
+  & > .menu > .menu-item > .sub-menu {
+    left: -1px;
+    top: 100%;
+  }
+
   li {
-    padding: 0 0 0 16px;
+    padding: 0 0 0 25px;
+    float: left;
+    position: relative;
+
+    &:hover > .sub-menu {
+      display: block;
+      position: absolute;
+      width: 200px;
+      z-index: 1000;
+    }
 
     a:before {
       content: " ";
       background: url("img/common/header-navigation.png") no-repeat;
       display: inline-block;
       overflow: hidden;
-      margin: 0.1em 0.4em 0 0;
+      margin: 0.1rem 0.1rem 0 0;
       @include transition-property(background-position);
       @include transition-duration(0.2s);
     }
 
     &.home {
-      a {
+      & > a {
         &:before {
-          @include create-sprite(-247px, -5px, 22px, 21px);
+          @include create-sprite(0, -224px, 32px, 32px);
         }
 
         &:hover {
@@ -33,24 +53,24 @@
         }
       }
 
-      a:hover:before {
-        @include create-sprite(-215px, -5px, 22px, 21px);
+      & > a:hover:before {
+        @include create-sprite(0, -192px, 32px, 32px);
       }
     }
 
     &.current-menu-item.home {
-      a {
+      & > a {
         color: $header-menu-home-color;
         &:before {
-          @include create-sprite(-215px, -5px, 22px, 21px);
+          @include create-sprite(0, -192px, 32px, 32px);
         }
       }
     }
 
     &.about-us {
-      a {
+      & > a {
         &:before {
-          @include create-sprite(-38px, -5px, 23px, 22px);
+          @include create-sprite(0, -32px, 32px, 32px);
         }
 
         &:hover {
@@ -58,24 +78,24 @@
         }
       }
 
-      a:hover:before {
-        @include create-sprite(-5px, -5px, 23px, 22px);
+      & > a:hover:before {
+        @include create-sprite(0, 0, 32px, 32px);
       }
     }
 
     &.current-menu-item.about-us {
-      a {
+      & > a {
         color: $header-menu-about-us-color;
         &:before {
-          @include create-sprite(-5px, -5px, 23px, 22px);
+          @include create-sprite(0, 0, 32px, 32px);
         }
       }
     }
 
     &.about-disabilities {
-      a {
+      & > a {
         &:before {
-          @include create-sprite(-110px, -5px, 29px, 27px);
+          @include create-sprite(0, -96px, 32px, 32px);
         }
 
         &:hover {
@@ -83,24 +103,24 @@
         }
       }
 
-      a:hover:before {
-        @include create-sprite(-71px, -5px, 29px, 27px);
+      & > a:hover:before {
+        @include create-sprite(0, -64px, 32px, 32px);
       }
     }
 
     &.current-menu-item.about-disabilities {
-      a {
+      & > a {
         color: $header-menu-about-disabilities-color;
         &:before {
-          @include create-sprite(-71px, -5px, 29px, 27px);
+          @include create-sprite(0, -64px, 32px, 32px);
         }
       }
     }
 
     &.donate {
-      a {
+      & > a {
         &:before {
-          @include create-sprite(-182px, -5px, 23px, 28px);
+          @include create-sprite(0, -160px, 32px, 32px);
         }
 
         &:hover {
@@ -108,24 +128,24 @@
         }
       }
 
-      a:hover:before {
-        @include create-sprite(-149px, -5px, 23px, 28px);
+      & > a:hover:before {
+        @include create-sprite(0, -128px, 32px, 32px);
       }
     }
 
     &.current-menu-item.donate {
-      a {
+      & > a {
         color: $header-menu-donate-color;
         &:before {
-          @include create-sprite(-149px, -5px, 23px, 28px);
+          @include create-sprite(0, -128px, 32px, 32px);
         }
       }
     }
 
     &.shop {
-      a {
+      & > a {
         &:before {
-          @include create-sprite(-279px, -5px, 24px, 23px);
+          @include create-sprite(0, -288px, 32px, 32px);
         }
 
         &:hover {
@@ -133,16 +153,16 @@
         }
       }
 
-      a:hover:before {
-        @include create-sprite(-313px, -5px, 24px, 23px);
+      & > a:hover:before {
+        @include create-sprite(0, -256px, 32px, 32px);
       }
     }
 
     &.current-menu-item.shop {
-      a {
+      & > a {
         color: $header-menu-shop-color;
         &:before {
-          @include create-sprite(-313px, -5px, 24px, 23px);
+          @include create-sprite(0, -256px, 32px, 32px);
         }
       }
     }
