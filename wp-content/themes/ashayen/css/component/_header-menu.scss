@@ -11,7 +11,10 @@
   }
 
   .sub-menu {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    @include transition-property(opacity, visibility);
+    @include transition-duration(0.3s);
     margin: 0;
     padding: 5px;
     position: absolute;
@@ -19,7 +22,7 @@
     z-index: 1000;
     text-transform: none;
     font: 1rem $body-font-family;
-    background: $sub-menu-background-color;
+    background: $sub-menu-background-color $sub-menu-background;
     @include border-radius(10px);
     @include single-box-shadow($color: $sub-menu-background-color, $hoff: 0, $voff: 0, $blur: 5px, $spread: 0, $inset: false);
 
@@ -71,7 +74,8 @@
 
       // Display the menu only on mouse over.
       & > .sub-menu {
-        display: block;
+        visibility: visible;
+        opacity: 1;
       }
     }
 
