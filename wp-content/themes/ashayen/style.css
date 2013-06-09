@@ -5686,6 +5686,17 @@ table tfoot tr td {
   width: 100%;
 }
 
+/* line 29, css/component/_featured-slider.scss */
+.sub-featured-posts .thumbnail {
+  max-height: 128px;
+  display: block;
+  overflow: hidden;
+}
+/* line 34, css/component/_featured-slider.scss */
+.sub-featured-posts .thumbnail img {
+  width: 100%;
+}
+
 /* line 1, css/component/_header-menu.scss */
 .header-menu {
   margin: 20px 0;
@@ -6041,8 +6052,9 @@ table tfoot tr td {
   float: left;
 }
 
-/* line 54, css/component/_header.scss */
-.page-heading h3 {
+/* line 55, css/component/_header.scss */
+.page-heading h3,
+.entry-header h3 {
   font-weight: normal;
   text-transform: uppercase;
   margin: 1em auto;

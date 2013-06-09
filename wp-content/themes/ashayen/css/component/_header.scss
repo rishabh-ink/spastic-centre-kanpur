@@ -51,6 +51,7 @@
   margin: $margin auto;
 }
 
-.page-heading h3 {
+.page-heading h3,
+.entry-header h3 {
   @include page-heading();
 }

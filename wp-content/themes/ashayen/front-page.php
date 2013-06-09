@@ -45,18 +45,26 @@
       </ul>
 
       <ul class="sub-featured-posts">
-        <li>
-          <h3>Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, libero, doloribus obcaecati velit voluptates possimus dolores tenetur ex sed facere magnam illum accusamus laborum ipsam deserunt nam nemo recusandae vitae.</p>
-        </li>
-        <li>
-          <h3>Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, libero, doloribus obcaecati velit voluptates possimus dolores tenetur ex sed facere magnam illum accusamus laborum ipsam deserunt nam nemo recusandae vitae.</p>
-        </li>
-        <li>
-          <h3>Title</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, libero, doloribus obcaecati velit voluptates possimus dolores tenetur ex sed facere magnam illum accusamus laborum ipsam deserunt nam nemo recusandae vitae.</p>
-        </li>
+        <?php
+          $sub_featured_posts = new WP_Query(array(
+            "category_name" => "Sub-Featured",
+            "posts_per_page" => 3
+          ));
+
+          while($sub_featured_posts -> have_posts()):
+            $sub_featured_posts -> the_post();
+        ?>
+          <li>
+            <a href="<?php the_permalink(); ?>" class="thumbnail">
+              <?php the_post_thumbnail(array('auto', 128)); ?>
+            </a>
+            <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+            <p><?php the_field("Subtitle"); ?></p>
+          </li>
+
+        <?php
+          endwhile;
+        ?>
       </ul>
 
     </div><!-- .content-area -->
