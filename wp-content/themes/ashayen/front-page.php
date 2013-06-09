@@ -58,7 +58,7 @@
             <a href="<?php the_permalink(); ?>" class="thumbnail">
               <?php the_post_thumbnail(array('auto', 128)); ?>
             </a>
-            <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+            <a class="title" href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
             <p><?php the_field("Subtitle"); ?></p>
           </li>
 

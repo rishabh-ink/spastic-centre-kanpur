@@ -11,4 +11,15 @@
     @include grid-column($columns: 4);
     margin: 1em auto;
   }
+
+  .thumbnail {
+    max-height: $sub-featured-thumbnail-height;
+    display: block;
+    overflow: hidden;
+    @include image-glow();
+
+    img {
+      width: 100%;
+    }
+  }
 }

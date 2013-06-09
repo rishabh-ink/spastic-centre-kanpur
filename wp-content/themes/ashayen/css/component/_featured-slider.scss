@@ -1,7 +1,9 @@
 .orbit-container {
   height: $slider-height;
+  @include image-glow();
 
   .orbit-slides-container {
+
     &>* {
       .orbit-caption {
         color: $orbit-caption-font-color;
@@ -23,17 +25,5 @@
 
 .orbit-slides-container img {
   width: 100%;
-}
 
-.sub-featured-posts {
-  .thumbnail {
-    max-height: $sub-featured-thumbnail-height;
-    display: block;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-    }
-
-  }
 }
