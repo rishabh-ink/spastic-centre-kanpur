@@ -6127,17 +6127,15 @@ footer.page-footer .legal-info,
 footer.page-footer .contact-info {
   font-size: 75%;
 }
-/* line 11, css/component/_footer.scss */
-footer.page-footer .legal-info a,
-footer.page-footer .contact-info a {
+/* line 13, css/component/_footer.scss */
+footer.page-footer .legal-info a {
   color: #222222;
 }
-/* line 14, css/component/_footer.scss */
-footer.page-footer .legal-info a:hover,
-footer.page-footer .contact-info a:hover {
+/* line 16, css/component/_footer.scss */
+footer.page-footer .legal-info a:hover {
   color: #555555;
 }
-/* line 20, css/component/_footer.scss */
+/* line 22, css/component/_footer.scss */
 footer.page-footer .legal-info {
   position: relative;
   padding-left: 0.9375em;
@@ -6145,7 +6143,7 @@ footer.page-footer .legal-info {
   width: 66.66667%;
   float: left;
 }
-/* line 24, css/component/_footer.scss */
+/* line 26, css/component/_footer.scss */
 footer.page-footer .contact-info {
   position: relative;
   padding-left: 0.9375em;
@@ -6153,22 +6151,22 @@ footer.page-footer .contact-info {
   width: 33.33333%;
   float: left;
 }
-/* line 27, css/component/_footer.scss */
+/* line 29, css/component/_footer.scss */
 footer.page-footer .contact-info .title {
   font-weight: bold;
 }
-/* line 31, css/component/_footer.scss */
+/* line 33, css/component/_footer.scss */
 footer.page-footer .contact-info .subtitle {
   color: #4d4d4d;
 }
-/* line 39, css/component/_footer.scss */
+/* line 41, css/component/_footer.scss */
 footer.page-footer .contact-info .line1:after,
 footer.page-footer .contact-info .line2:after,
 footer.page-footer .contact-info .city:after,
 footer.page-footer .contact-info .state:after {
   content: ",";
 }
-/* line 45, css/component/_footer.scss */
+/* line 47, css/component/_footer.scss */
 footer.page-footer .contact-info .country:after {
   content: " \2014";
 }
@@ -6180,12 +6178,12 @@ footer.page-footer .footer-menu ul {
 footer.page-footer .footer-menu li {
   display: inline;
 }
-/* line 55, css/component/_footer.scss */
+/* line 57, css/component/_footer.scss */
 footer.page-footer .footer-menu li:before {
   content: "|";
   padding: 0 16px 0 16px;
 }
-/* line 61, css/component/_footer.scss */
+/* line 63, css/component/_footer.scss */
 footer.page-footer .footer-menu li:first-child:before {
   content: "";
   padding: 0;
@@ -6199,8 +6197,9 @@ footer.page-footer .footer-menu li:first-child:before {
 .social-media-menu li {
   display: inline;
 }
-/* line 72, css/component/_footer.scss */
+/* line 74, css/component/_footer.scss */
 .social-media-menu .menu-item a {
+  color: rgba(255, 255, 255, 0);
   background: url("img/common/social-media.png") no-repeat;
   width: 32px;
   height: 32px;
@@ -6216,51 +6215,51 @@ footer.page-footer .footer-menu li:first-child:before {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 83, css/component/_footer.scss */
+/* line 87, css/component/_footer.scss */
 .social-media-menu .menu-item a:hover {
   opacity: 1;
 }
-/* line 87, css/component/_footer.scss */
+/* line 91, css/component/_footer.scss */
 .social-media-menu .menu-item.facebook a {
   background-position: -5px, -5px;
 }
-/* line 91, css/component/_footer.scss */
+/* line 95, css/component/_footer.scss */
 .social-media-menu .menu-item.flickr a {
   background-position: -47px, -5px;
 }
-/* line 95, css/component/_footer.scss */
+/* line 99, css/component/_footer.scss */
 .social-media-menu .menu-item.gmail a {
   background-position: -89px, -5px;
 }
-/* line 99, css/component/_footer.scss */
+/* line 103, css/component/_footer.scss */
 .social-media-menu .menu-item.linkedin a {
   background-position: -131px, -5px;
 }
-/* line 103, css/component/_footer.scss */
+/* line 107, css/component/_footer.scss */
 .social-media-menu .menu-item.picasa a {
   background-position: -173px, -5px;
 }
-/* line 107, css/component/_footer.scss */
+/* line 111, css/component/_footer.scss */
 .social-media-menu .menu-item.rss a {
   background-position: -215px, -5px;
 }
-/* line 111, css/component/_footer.scss */
+/* line 115, css/component/_footer.scss */
 .social-media-menu .menu-item.skype a {
   background-position: -257px, -5px;
 }
-/* line 115, css/component/_footer.scss */
+/* line 119, css/component/_footer.scss */
 .social-media-menu .menu-item.twitter a {
   background-position: -299px, -5px;
 }
-/* line 119, css/component/_footer.scss */
+/* line 123, css/component/_footer.scss */
 .social-media-menu .menu-item.vimeo a {
   background-position: -341px, -5px;
 }
-/* line 123, css/component/_footer.scss */
+/* line 127, css/component/_footer.scss */
 .social-media-menu .menu-item.wordpress a {
   background-position: -383px, -5px;
 }
-/* line 127, css/component/_footer.scss */
+/* line 131, css/component/_footer.scss */
 .social-media-menu .menu-item.youtube a {
   background-position: -425px, -5px;
 }

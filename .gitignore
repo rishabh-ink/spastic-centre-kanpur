@@ -7,5 +7,5 @@ sitemap.xml
 *.log
 sitemap.xml
 sitemap.xml.gz
-.sass-cache
+wp-content/themes/ashayen/css/.sass-cache
 *.sublime-*

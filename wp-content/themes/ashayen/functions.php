@@ -164,7 +164,7 @@ if(function_exists("add_theme_support")) {
 }
 
 if(function_exists("add_image_size")) {
-  add_image_size("featured", 640, 480, true);
+  add_image_size("featured", 'auto', 'auto', true);
   add_image_size("post-thumb", 320, 240, true);
 }
 
