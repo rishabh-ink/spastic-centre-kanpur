@@ -3977,13 +3977,13 @@ form.custom .custom.disabled {
   background: #fff;
   float: left;
   margin-right: 6px;
-  border: solid 2px #000;
+  border: solid 2px #f1783b;
   -webkit-border-radius: 1000px;
   border-radius: 1000px;
 }
 /* line 175, css/lib/foundation/scss/foundation/components/_orbit.scss */
 .orbit-bullets li.active {
-  background: #000;
+  background: #f1783b;
 }
 /* line 179, css/lib/foundation/scss/foundation/components/_orbit.scss */
 .orbit-bullets li:last-child {
