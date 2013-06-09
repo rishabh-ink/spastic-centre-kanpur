@@ -6064,7 +6064,7 @@ table tfoot tr td {
 .entry-header h3 {
   font-weight: normal;
   text-transform: uppercase;
-  margin: 1em auto;
+  margin: 1em auto 0.5em auto;
 }
 
 /* line 2, css/component/_body.scss */
@@ -6289,7 +6289,7 @@ footer.page-footer .footer-menu li:first-child:before {
 .sub-featured-posts h3 {
   font-weight: normal;
   text-transform: uppercase;
-  margin: 0.25em auto;
+  margin: 0.25em auto 0.125em auto;
 }
 /* line 10, css/component/_sub-featured-posts.scss */
 .sub-featured-posts li {
@@ -6317,4 +6317,10 @@ footer.page-footer .footer-menu li:first-child:before {
 /* line 21, css/component/_sub-featured-posts.scss */
 .sub-featured-posts .thumbnail img {
   width: 100%;
+}
+
+/* line 1, css/component/_meta.scss */
+.entry-meta {
+  color: #4d4d4d;
+  font-size: 75%;
 }

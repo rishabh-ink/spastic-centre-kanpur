@@ -48,7 +48,7 @@
 @mixin page-heading($margin: 1em) {
   font-weight: normal;
   text-transform: uppercase;
-  margin: $margin auto;
+  margin: $margin auto $margin/2 auto;
 }
 
 .page-heading h3,
