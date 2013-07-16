@@ -43,10 +43,10 @@ footer.page-footer {
       }
     }
 
-    .country {
-      &:after {
-        content: " \2014"
-      }
+    .phone,
+    .email {
+      color: inherit;
+      font-size: 1.2em;
     }
   }
 

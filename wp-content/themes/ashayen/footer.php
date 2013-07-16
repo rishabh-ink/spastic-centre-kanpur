@@ -32,6 +32,7 @@
               ));
             ?>
           </div>
+          <?php /* FIXME Instead of directly printing the values, check if the value exists and then print it. */ ?>
           <div class="address">
             <p>
               <span class="title"><?php echo get_option('gcf-address-title'); ?></span><br />
@@ -43,9 +44,8 @@
               <span class="country"><?php echo get_option('gcf-address-country'); ?></span>
               <span class="postal-code"><?php echo get_option('gcf-address-postal-code'); ?></span><br />
 
-              <span class="phone"><i class="icon-phone"></i> <?php echo get_option('gcf-address-phone'); ?></span><br />
-              <span class="fax"><i class="icon-phone"></i> <?php echo get_option('gcf-address-fax'); ?></span><br />
-              <span class="email"><i class="icon-mail"></i> <?php echo get_option('gcf-address-email'); ?></span><br />
+              <a class="phone" href="tel:<?php echo get_option('gcf-address-phone'); ?>"><i class="icon-phone"></i> <?php echo get_option('gcf-address-phone'); ?></a><br />
+              <a class="email" href="mailto:<?php echo get_option('gcf-address-email'); ?>"><i class="icon-mail"></i> <?php echo get_option('gcf-address-email'); ?></a><br />
 
             </p>
           </div>

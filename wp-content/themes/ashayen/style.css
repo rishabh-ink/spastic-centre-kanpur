@@ -5696,7 +5696,7 @@ table tfoot tr td {
 
 /* line 1, css/component/_header-menu.scss */
 .header-menu {
-  margin: 20px 0;
+  margin: 0 0 20px 0;
   *zoom: 1;
 }
 /* line 2, css/util/_mixin.scss */
@@ -6167,8 +6167,10 @@ footer.page-footer .contact-info .state:after {
   content: ",";
 }
 /* line 47, css/component/_footer.scss */
-footer.page-footer .contact-info .country:after {
-  content: " \2014";
+footer.page-footer .contact-info .phone,
+footer.page-footer .contact-info .email {
+  color: inherit;
+  font-size: 1.2em;
 }
 /* line 2, css/util/_mixin.scss */
 footer.page-footer .footer-menu ul {
