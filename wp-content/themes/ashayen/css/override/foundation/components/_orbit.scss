@@ -1,0 +1,5 @@
+// Hiding these as per the requirements.
+.orbit-slide-number,
+.orbit-timer {
+  @include hide();
+}

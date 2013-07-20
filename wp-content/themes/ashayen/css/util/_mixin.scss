@@ -12,3 +12,7 @@
   @include single-box-shadow($hoff: 0, $voff: 0, $blur: 5px, $spread: 0);
   @include border-radius(2px);
 }
+
+@mixin hide () {
+  display: none;
+}

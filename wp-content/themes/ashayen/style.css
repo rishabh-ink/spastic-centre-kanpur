@@ -6,6 +6,20 @@ Author URI: http://rishabhsrao.github.io
 Description: Ashayen is a theme for the Ashayen Centre (formerly Spastic Centre), Kanpur
 Version: 1.0.0
 */
+@font-face {
+  font-family: "Pick and Roll";
+  src: url("font/pick-and-roll/pickandroll-webfont.eot");
+  src: url("font/pick-and-roll/pickandroll-webfont.eot?#iefix") format("embedded-opentype"), url("font/pick-and-roll/pickandroll-webfont.woff") format("woff"), url("font/pick-and-roll/pickandroll-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 3, css/override/foundation/components/_orbit.scss */
+.orbit-slide-number,
+.orbit-timer {
+  display: none;
+}
+
 /* line 4, css/lib/foundation/scss/foundation/components/_global.scss */
 *,
 *:before,
@@ -5651,14 +5665,6 @@ table tfoot tr td {
 }
 
 /* '\1f528' */
-@font-face {
-  font-family: "Pick and Roll";
-  src: url("font/pick-and-roll/pickandroll-webfont.eot");
-  src: url("font/pick-and-roll/pickandroll-webfont.eot?#iefix") format("embedded-opentype"), url("font/pick-and-roll/pickandroll-webfont.woff") format("woff"), url("font/pick-and-roll/pickandroll-webfont.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* line 1, css/component/_featured-slider.scss */
 .orbit-container {
   height: 460px;
@@ -5674,7 +5680,7 @@ table tfoot tr td {
 /* line 8, css/component/_featured-slider.scss */
 .orbit-container .orbit-slides-container > * .orbit-caption {
   color: #eabe1f;
-  height: 150px;
+  height: 120px;
   text-align: right;
   font-size: 1.1em;
 }
@@ -5692,6 +5698,13 @@ table tfoot tr td {
 /* line 26, css/component/_featured-slider.scss */
 .orbit-slides-container img {
   width: 100%;
+}
+
+/* line 30, css/component/_featured-slider.scss */
+.orbit-bullets {
+  top: -30px;
+  left: 15px;
+  margin: 0 auto;
 }
 
 /* line 1, css/component/_header-menu.scss */
