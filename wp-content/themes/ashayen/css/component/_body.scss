@@ -1,6 +1,7 @@
 html,
 body {
   background: $body-bg;
+  min-width: 960px !important; /* HACK Removing responsive-ness. FIXME Need to re-do the entire theme with mobile-first design in mind. */
 }
 
 .outer-container {
