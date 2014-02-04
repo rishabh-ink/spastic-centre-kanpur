@@ -21,7 +21,8 @@
         <?php
           $featured_posts = new WP_Query(array(
             "category_name" => "Featured",
-            "posts_per_page" => 3
+            "posts_per_page" => 3,
+            "post_type": "any" // See http://codex.wordpress.org/Class_Reference/WP_Query#Type_Parameters
           ));
 
           while($featured_posts -> have_posts()):
@@ -48,7 +49,8 @@
         <?php
           $sub_featured_posts = new WP_Query(array(
             "category_name" => "Sub-Featured",
-            "posts_per_page" => 3
+            "posts_per_page" => 3,
+            "post_type": "any" // See http://codex.wordpress.org/Class_Reference/WP_Query#Type_Parameters
           ));
 
           while($sub_featured_posts -> have_posts()):
